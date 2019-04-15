@@ -31,7 +31,7 @@ To run the examples use:
 npm run '<EXAMPLES_FOLDER>'
 ```
 
-for example
+for the quick start guide doÖ
 
 ```bash
 npm run 01_Quick_Start_Guide
