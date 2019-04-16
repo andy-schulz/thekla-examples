@@ -10,11 +10,11 @@ declare const thekla: {config: TheklaConfig};
 
 describe('Search on Google with thekla', function () {
 
-    it('should return a value', async function () {
+    it('should return a value', function () {
 
         // create a browser with the configuration from thekla_conf.ts
         // the browser is created async right away, this will change in future versions, then it will created upon first use
-        const aBrowser = await RunningBrowser
+        const aBrowser = RunningBrowser
             .startedOn(thekla.config.seleniumConfig as SeleniumConfig)
             .withDesiredCapability((thekla.config.capabilities as DesiredCapabilities[])[0]);
 
@@ -29,7 +29,7 @@ describe('Search on Google with thekla', function () {
             .called(`The Google search field`)                       // give the element a name (optional)
             .shallWait(UntilElement.is.visible().forAsLongAs(1000));    // if its not there right away, wait for it (optional)
 
-        await jonathan.attemptsTo(
+        return jonathan.attemptsTo(
             Navigate.to("https://www.google.com/"),                         // Go to Google
             Enter.value("software test automation")
                 .into(googleSearchField),                               // send the search text to the search field
@@ -41,6 +41,6 @@ describe('Search on Google with thekla', function () {
     });
 
     afterAll(() => {
-        RunningBrowser.cleanup()            // cleanup all created browser when you are done
+        return RunningBrowser.cleanup()            // cleanup all created browser when you are done
     });
 });
