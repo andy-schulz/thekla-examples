@@ -1,11 +1,11 @@
-import {TheklaConfig} from "thekla"
+import {TheklaConfig} from "@thekla/config"
 
 export const config: TheklaConfig = {
 
-    specs: ["dist/02_Use_a_Rest_Api/use_the_math_api_spec.js"],
+    specs: [`dist/10_Use_a_Rest_Api/use_the_math_api_spec.js`],
 
     testFramework: {
-        frameworkName: "jasmine",
+        frameworkName: `jasmine`,
         jasmineOptions: {
             defaultTimeoutInterval: 10 * 1000
         }
@@ -14,7 +14,7 @@ export const config: TheklaConfig = {
     restConfig: {
         requestOptions: {
             resolveWithFullResponse: false,
-            proxy: process.env.MY_PROXY ? process.env.MY_PROXY : "",
+            proxy: process.env.REQUEST_PROXY ? process.env.REQUEST_PROXY : ``,
         }
     }
 };

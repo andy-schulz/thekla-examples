@@ -1,11 +1,10 @@
-import * as Conf from "@thekla/config";
+import {TheklaConfig} from "@thekla/config";
 
-export const config: Conf.TheklaConfig = {
+export const config: TheklaConfig = {
 
-    specs: [`dist/01_Quick_Start_Guide/google_search_spec.js`],
+    specs: [`dist/02_Use_Tasks_and_Page_Objects/calculator_example.js`],
 
     serverConfig: {
-
         automationFramework: {
             logLevel: `silent`
         },

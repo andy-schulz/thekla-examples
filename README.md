@@ -40,4 +40,5 @@ npm run 01_Quick_Start_Guide
 ## Available examples
 
 * ``01_Quick_Start_Guide`` - Enter a search string into Googles search bar
-* ``02_Use_a_Rest_Api`` - use a Rest API to add two numbers
+* ``02_Use_Tasks_and_Page_Objects`` - how to create tasks and page objects
+* ``10_Use_a_Rest_Api`` - use a Rest API to add two numbers
