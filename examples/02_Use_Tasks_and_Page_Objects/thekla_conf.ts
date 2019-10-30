@@ -1,8 +1,7 @@
-import {TheklaConfig} from "@thekla/config";
+import {TheklaConfig} from "@thekla/config/dist";
 
 export const config: TheklaConfig = {
-
-    specs: [`dist/02_Use_Tasks_and_Page_Objects/calculator_example.js`],
+    specs: [`dist/01_Quick_Start_Guide/google_search_spec.js`],
 
     serverConfig: {
         automationFramework: {

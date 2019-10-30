@@ -1,11 +1,10 @@
-import {TheklaConfig} from "@thekla/config/dist";
+import {TheklaConfig} from "@thekla/config";
 
 export default {
 
-    specs: [`dist/01_Quick_Start_Guide/google_search_spec.js`],
+    specs: [`dist/**/*_[Ss]pec.js`],
 
     serverConfig: {
-
         automationFramework: {
             logLevel: `silent`
         },
@@ -20,6 +19,13 @@ export default {
 
     capabilities: {
         browserName: `chrome`
+    },
+
+    restConfig: {
+        requestOptions: {
+            resolveWithFullResponse: false,
+            proxy: process.env.REQUEST_PROXY ? process.env.REQUEST_PROXY : ``,
+        }
     },
 
     testFramework: {
