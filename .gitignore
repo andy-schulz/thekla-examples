@@ -1,6 +1,9 @@
 # IDE ignores
 .idea
 
+# as this repor will never be a package i can ignore the package-lock.json
+package-lock.json
+
 # node ignores
 node_modules
 
