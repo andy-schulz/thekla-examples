@@ -3,7 +3,7 @@ import {Task, PerformsTask, Activity} from "@thekla/core";
 import {Click}                        from "@thekla/web-and-mobile-abilities";
 
 export class Add extends Task<void, void> {
-    private secondNumber: number = 0;
+    private secondNumber = 0;
 
     public static number(firstNumber: number): Add {
         return new Add(firstNumber);
@@ -27,14 +27,13 @@ export class Add extends Task<void, void> {
         super();
     }
 
-
     public enterNumber(number: number): Activity<void, void>[] {
         const clickFlow: Activity<void, void>[] = [];
         if (number < 0) {
             clickFlow.push(Click.on(GoogleCalculator.minus));
         }
 
-        for (let char of number.toString()) {
+        for (const char of number.toString()) {
             switch (char) {
                 case `1`:
                     clickFlow.push(Click.on(GoogleCalculator.one));

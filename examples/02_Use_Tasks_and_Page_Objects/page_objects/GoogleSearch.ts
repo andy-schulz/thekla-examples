@@ -1,4 +1,4 @@
-import {element, By, SppElement, UntilElement} from "@thekla/web-and-mobile-abilities";
+import {element, By, UntilElement} from "@thekla/web-and-mobile-abilities";
 
 export const GOOGLE_SEARCH_FIELD = element(By.css(`[name='q']`))
     .shallWait(UntilElement.is.visible().forAsLongAs(5000))

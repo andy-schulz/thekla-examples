@@ -3,13 +3,13 @@
   "private": true,
   "description": "thekla test examples",
   "scripts": {
-    "10": "npx --no-install thekla dist/10_Use_a_Rest_Api/thekla_conf.js",
     "prepare": "tsc",
     "test": "npx --no-install thekla dist/thekla_conf.js",
     "01": "npx --no-install thekla dist/01_Quick_Start_Guide/thekla_conf.js",
     "01_Quick_Start_Guide": "npm run 01",
     "02": "npx --no-install thekla dist/02_Use_Tasks_and_Page_Objects/thekla_conf.js",
     "02_Use_Tasks_and_Page_Objects": "npm run 02",
+    "10": "npx --no-install thekla dist/10_Use_a_Rest_Api/thekla_conf.js",
     "10_Use_a_Rest_Api": "npm run 10"
   },
   "keywords": [

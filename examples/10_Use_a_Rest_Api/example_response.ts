@@ -9,17 +9,17 @@ const response = {
     connection: {},
     httpVersionMajor: 1,
     httpVersionMinor: 1,
-    httpVersion: '1.1',
+    httpVersion: `1.1`,
     complete: true,
     headers: {},
     rawHeaders: [],
     trailers: {},
     rawTrailers: [],
     upgrade: false,
-    url: '',
+    url: ``,
     method: null,
     statusCode: 200,
-    statusMessage: 'OK',
+    statusMessage: `OK`,
     client: {},
     _consuming: true,
     _dumped: false,
@@ -28,5 +28,5 @@ const response = {
     toJSON: [],
     caseless: {},
     read: [Function],
-    body: '8'
+    body: `8`
 };

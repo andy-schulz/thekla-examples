@@ -16,5 +16,3 @@ export const seven: SppElement = element(By.css(`[jsname='rk7bOd']`)).called(`nu
 export const eight: SppElement = element(By.css(`[jsname='T7PMFe']`)).called(`number eight`);
 export const nine: SppElement = element(By.css(`[jsname='XoxYJ']`)).called(`number nine`);
 export const res: SppElement = element(By.css(`[jsname='Pt8tGc']`)).called(`calculate the result (aka the equal sign)`);
-
-
