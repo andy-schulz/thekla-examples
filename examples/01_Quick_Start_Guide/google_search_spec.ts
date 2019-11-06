@@ -22,7 +22,7 @@ describe(`Search on Google with thekla`, function () {
             .withCapabilities(thekla.capabilities());
 
         // create the actor and give it a name
-        jonathan = Actor.named("Jonathan");
+        jonathan = Actor.named(`Jonathan`);
 
         // specify what your actor can do.
         // In this case he can use a web browser with the browser created before.
@@ -34,22 +34,22 @@ describe(`Search on Google with thekla`, function () {
         // 2. name the element
             .called(`The Google search field`)
             // wait for the element if its not there right away
-            .shallWait(UntilElement.is.visible().forAsLongAs(1000));
+            .shallWait(UntilElement.is.visible.forAsLongAs(1000));
     });
 
-    it('should fill the search field with a text', async function () {
+    it(`should fill the search field with a text`, async function () {
 
         await jonathan.attemptsTo(
             // Go to Google
-            Navigate.to("https://www.google.com/"),
+            Navigate.to(`https://www.google.com/`),
             // send the search text to the search field
-            Enter.value("software test automation")
+            Enter.value(`software test automation`)
                 .into(googleSearchField),
             // Wait for 5 Seconds (just to visually follow the test case)
             Sleep.for(5 * 1000),
             // check if the text was entered
             See.if(Value.of(googleSearchField))
-                .is(Expected.toBe("software test automation"))
+                .is(Expected.toBe(`software test automation`))
         )
 
     });
