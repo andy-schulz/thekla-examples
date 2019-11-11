@@ -2,10 +2,10 @@ import {TheklaConfig} from "@thekla/config";
 
 export default {
 
-    specs: ["./features/*.feature"],
+    specs: [`features/*.feature`],
 
     testFramework: {
-        frameworkName: "cucumber",
+        frameworkName: `cucumber`,
     }
 
 } as TheklaConfig
