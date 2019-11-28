@@ -8,7 +8,7 @@ describe(`The MathJS API to add numbers shall be executed by Martha`, () => {
     // create the actor
     const Martha = Actor.named(`Martha`);
     // create a simple request
-    // the different requests could be stored in Workflow objects like web elements are stored in page objects
+    // the different requests could be stored in workflow objects like web elements are stored in page objects
     const mathApiRequest = request(On.resource(`http://api.mathjs.org/v4/?expr=2*(7-3)`));
 
     beforeAll(() => {

@@ -1,9 +1,17 @@
-import {getLogger}                                                       from "log4js"
-import * as Conf                                                         from "@thekla/config";
-import {Actor, Expected, See}                                            from "@thekla/core";
-import {BrowseTheWeb, RunningBrowser, Navigate, Enter, Click, Key, Text} from "@thekla/web-and-mobile-abilities";
-import {GOOGLE_SEARCH_FIELD, GOOGLE_SUBMIT_BUTTON, CALCULATOR_INPUT}     from "./page_objects/GoogleSearch";
-import {Add}                                                             from "./tasks/Add";
+import * as Conf                                                                     from "@thekla/config";
+import {Actor, Expected, See}                                                        from "@thekla/core";
+import {
+    BrowseTheWeb,
+    Click,
+    Enter,
+    Key,
+    Navigate,
+    RunningBrowser,
+    Text
+}                                                                                    from "@thekla/web-and-mobile-abilities";
+import {getLogger}                                                                   from "log4js"
+import {CALCULATOR_INPUT_NO_WAIT, GOOGLE_SEARCH_FIELD_NO_WAIT, GOOGLE_SUBMIT_BUTTON} from "./page_objects/GoogleSearch";
+import {Add}                                                                         from "./tasks/Add";
 
 declare const thekla: Conf.TheklaGlobal;
 
@@ -33,19 +41,18 @@ describe(`Using Google Search to find an online calculator`, (): void => {
         it(`the google calculator should be loaded 
         - (test case id: ee1fcbb5-eb08-4f0d-979b-601ba9b63d87)`, async (): Promise<void> => {
             return philipp.attemptsTo(
-
                 Navigate.to(`http://www.google.com`),
-                Enter.value(`calculator`).into(GOOGLE_SEARCH_FIELD),
-                Enter.value(Key.TAB).into(GOOGLE_SEARCH_FIELD),
+                Enter.value(`calculator`).into(GOOGLE_SEARCH_FIELD_NO_WAIT),
+                Enter.value(Key.TAB).into(GOOGLE_SEARCH_FIELD_NO_WAIT),
                 Click.on(GOOGLE_SUBMIT_BUTTON),
 
-                See.if(Text.of(CALCULATOR_INPUT))
-                    .is(Expected.toEqual(`0`)),
+                See.if(Text.of(CALCULATOR_INPUT_NO_WAIT))
+                   .is(Expected.toEqual(`0`)),
 
                 Add.number(1).to(20),
 
-                See.if(Text.of(CALCULATOR_INPUT))
-                    .is(Expected.toEqual(`21`))
+                See.if(Text.of(CALCULATOR_INPUT_NO_WAIT))
+                   .is(Expected.toEqual(`21`))
             )
         });
     });

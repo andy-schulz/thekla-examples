@@ -5,7 +5,8 @@ export const config: TheklaConfig = {
 
     serverConfig: {
         automationFramework: {
-            logLevel: `silent`
+            logLevel: `silent`,
+            // waitToBeVisibleForAsLongAs: 10000
         },
 
         serverAddress: {

@@ -97,7 +97,7 @@ npm run 01_Quick_Start_Guide
 
 ## Available examples
 
-* ``01_Quick_Start_Guide`` - Enter a search string into Googles search bar
-* ``02_Use_Tasks_and_Page_Objects`` - how to create tasks and page objects
-* [``10_Cucumber_Quick_Start_Guide``](10_Cucumber_Quick_Start_Guide/README.md) - cucumber test examples
-* ``50_Use_a_Rest_Api`` - use a Rest API to add two numbers
+* [``01_Quick_Start_Guide``](examples/01_Quick_Start_Guide) - Enter a search string into Googles search bar
+* [``02_Use_Tasks_and_Page_Objects``](examples/02_Use_Tasks_and_Page_Objects) - how to create tasks and organize your elements in page objects
+* [``10_Cucumber_Quick_Start_Guide``](examples/10_Cucumber_Quick_Start_Guide/README.md) - cucumber test examples
+* [``50_Use_a_Rest_Api``](examples/50_Use_a_Rest_Api) - use a Rest API to add two numbers

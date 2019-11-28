@@ -1,6 +1,6 @@
 {
   "scripts": {
     "pretest": "tsc",
-    "test": "thekla ./dist/thekla_conf.js"
+    "test": "./../../node_modules/.bin/thekla dist/thekla_conf.js"
   }
 }

@@ -10,6 +10,8 @@
     "01_Quick_Start_Guide": "npm run 01",
     "02": "npx --no-install thekla dist/02_Use_Tasks_and_Page_Objects/thekla_conf.js",
     "02_Use_Tasks_and_Page_Objects": "npm run 02",
+    "02:implicitWait": "npx --no-install thekla dist/02_Use_Tasks_and_Page_Objects/thekla_implicit_wait_conf.js",
+    "02_Use_Tasks_and_Page_Objects:implicitWait": "npm run 02:implicitWait",
     "50_Use_a_Rest_Api": "npm run 10"
   },
   "keywords": [
@@ -28,15 +30,15 @@
   "author": "Andy Schulz",
   "license": "MIT",
   "dependencies": {
-    "@thekla/config": "^2.0.1",
-    "@thekla/core": "^2.2.0",
-    "@thekla/rest-abilities": "^2.2.0",
-    "@thekla/web-and-mobile-abilities": "^2.2.0",
-    "@types/jasmine": "^3.4.6",
+    "@thekla/config": "^2.4.0",
+    "@thekla/core": "^2.4.0",
+    "@thekla/rest-abilities": "^2.4.0",
+    "@thekla/web-and-mobile-abilities": "^2.4.0",
+    "@types/jasmine": "^3.5.0",
     "del-cli": "^3.0.0",
     "jasmine": "^3.5.0",
     "log4js": "^5.3.0",
-    "thekla": "^2.1.1",
+    "thekla": "^2.4.0",
     "typescript": "^3.7.2"
   }
 }
