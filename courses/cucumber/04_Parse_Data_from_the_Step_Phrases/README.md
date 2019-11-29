@@ -27,7 +27,8 @@ to implements the following steps:
 
 ````
 
-In the ``When`` step cucumber already assumed that the two numbers int the phrase
+In the ``When`` step cucumber already assumed that the two numbers in the phrase
+    
 ````gherkin
 When he adds the numbers 1 and 2
 ````
@@ -95,10 +96,13 @@ If you want to test you regular expression first before using it in your
 step definitions go to [RegExr.com](https://regexr.com/).
 
 # Exercises
+
+Use the [Cucumber Expressions](https://cucumber.io/docs/cucumber/cucumber-expressions/) page to solve the exercises.
+
 1. Extract the name Bernhard from the Given phrase with a string expression and a regular expression
     * Hint: Put the name in quotes and see what cucumber suggests.
     * Print the name to the console.
-1. Make the Name Bernhard Optional in the Given step, it should work with:
+1. Make the name 'Bernhard' optional in the Given step, it should work with:
     ````gherkin
     Given Bernhard opened a calculator
     # or

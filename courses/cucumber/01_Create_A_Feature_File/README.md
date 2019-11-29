@@ -109,7 +109,7 @@ As you specified three steps in the scenario the character sequence is three cha
 
 In addition cucumber even gives you a hint what you need to do to execute the scenario:
 
-````
+````bash
     Undefined. Implement with the following snippet:
     
      Given('Bernhard opened a calculator', function () {

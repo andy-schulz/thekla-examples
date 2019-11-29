@@ -23,7 +23,7 @@ The same error message is thrown as in the [First Feature](../01_Create_A_Featur
 as the step definitions cant be found by cucumber, it will only search in the features
 folder by default.
 
-````
+````bash
 
 UUU
 
@@ -51,7 +51,7 @@ npx cucumber-js --require src/__step_definition__/**/*.js
 Now ``cucumber-js`` is able to find the step definitions again a prints out
 the correct message:
 
-````
+````bash
 P--
 
 Warnings:
