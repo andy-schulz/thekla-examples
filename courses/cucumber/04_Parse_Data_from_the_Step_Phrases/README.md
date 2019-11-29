@@ -7,7 +7,7 @@ to implements the following steps:
 
 > The output is shortend for brevity
 
-````
+````javascript
     Given('Bernhard opened a calculator', function () {
     // Write code here that turns the phrase above into concrete actions
     return 'pending';
