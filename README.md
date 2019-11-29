@@ -29,38 +29,9 @@ $ 6.12.0
 
 ### Install Selenium
 
-To install selenium we are using ``webdriver-manager`` as it facilitates the
-installation and later on the update process.
+Checkout the [Selenium Installation Instructions](INSTALL_SELENIUM.md)
 
-Install webdriver-manager
-
-```bash
-npm install -g webdriver-manager
-```
-
-Get the latest selenium standalone and Chrome / Firefox driver.
-
-```bash
-webdriver-manager update
-```
-
-Start the Selenium Server.
-
-```bash
-webdriver-manager start
-```
-
-Stop the Selenium Server.
-
-you can do ``Ctrl + c`` inside the window you started the server or
-
-```bash
-webdriver-manager shutdown
-```
-
-check [the webdriver-manager repository](https://github.com/angular/webdriver-manager) for more information
-
-## clone the Repository
+## Clone the Repository
   
 Make sure you have a selenium standalone server running locally.
 
@@ -81,7 +52,17 @@ install the packages
 npm install
 ````
 
-## Run the examples
+## Available courses
+
+* [`cucumber`](courses/cucumber/README.md)
+
+## Available examples
+
+* [``01_Quick_Start_Guide``](examples/01_Quick_Start_Guide) - Enter a search string into Googles search bar
+* [``02_Use_Tasks_and_Page_Objects``](examples/02_Use_Tasks_and_Page_Objects) - how to create tasks and organize your elements in page objects
+* [``50_Use_a_Rest_Api``](examples/50_Use_a_Rest_Api) - use a Rest API to add two numbers
+
+### Run the examples
 
 To run the examples use:
 
@@ -94,10 +75,3 @@ for example
 ```bash
 npm run 01_Quick_Start_Guide
 ```
-
-## Available examples
-
-* [``01_Quick_Start_Guide``](examples/01_Quick_Start_Guide) - Enter a search string into Googles search bar
-* [``02_Use_Tasks_and_Page_Objects``](examples/02_Use_Tasks_and_Page_Objects) - how to create tasks and organize your elements in page objects
-* [``10_Cucumber_Quick_Start_Guide``](examples/10_Cucumber_Quick_Start_Guide/README.md) - cucumber test examples
-* [``50_Use_a_Rest_Api``](examples/50_Use_a_Rest_Api) - use a Rest API to add two numbers

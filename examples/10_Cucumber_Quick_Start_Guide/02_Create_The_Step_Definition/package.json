@@ -1,6 +1,0 @@
-{
-  "scripts": {
-    "pretest": "tsc",
-    "test": "thekla dist/thekla_conf.js"
-  }
-}

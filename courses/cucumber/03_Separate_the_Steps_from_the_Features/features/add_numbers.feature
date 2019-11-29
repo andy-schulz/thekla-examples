@@ -1,8 +1,9 @@
-Feature: Add two numbers
+Feature: Add two Numbers
 
-  The calculator can add two numbers
+  The "calculator" can add two numbers
 
-  Scenario: Navigate to Site
+  Scenario: Add positive numbers
+
     Given Bernhard opened a calculator
     When he adds the numbers 1 and 2
     Then he can see the result 3
