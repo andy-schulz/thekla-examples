@@ -1,3 +1,10 @@
+---
+title: Parse Data from Steps
+parent: Cucumber
+has_children: false
+nav_order: 40
+---
+
 # Parse Data from a Cucumber Step Phrase
 
 ## Using Simple Expressions

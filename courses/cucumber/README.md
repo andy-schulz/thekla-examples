@@ -1,3 +1,9 @@
+---
+title: Cucumber
+has_children: true
+nav_order: 11
+---
+
 # Using cucumber
 
 This folder contains multiple projects which will give you a short overview on how
@@ -13,6 +19,6 @@ to use cucumber. All feature files in each folder can be executed by ``cucumber-
 
 ## Additional Sources of Information
 
-* Detailed [Cucumber Introduction](https://cucumber.io/docs/guides/overview/) from the guys at cucumber.id
+* Detailed [Cucumber Introduction](https://cucumber.io/docs/guides/overview/) from the folks at cucumber.io
 
 ## Overview

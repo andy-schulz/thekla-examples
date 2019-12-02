@@ -1,3 +1,10 @@
+---
+title: Create a Feature File
+parent: Cucumber
+has_children: false
+nav_order: 10
+---
+
 # A single feature file
 
 A simple feature file consists of:

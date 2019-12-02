@@ -1,3 +1,10 @@
+---
+title: Separate Steps and Features
+parent: Cucumber
+has_children: false
+nav_order: 30
+---
+
 # Separating the step definitions for the feature files
 
 I dont like having the step definitions mixed within the features folder. Instead I like to

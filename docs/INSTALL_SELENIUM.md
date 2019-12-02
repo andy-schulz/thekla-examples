@@ -1,6 +1,6 @@
 # Install Selenium
 
-## Manual install by downloading the server and driver files
+## Manual installation by downloading the server and driver files
 
 First download and extract the following files into a folder of your choice
 
@@ -30,7 +30,7 @@ java selenium-server-standalone.jar -port 4444
 
 ```
 
-## Automatic Install with ``webdriver-manager``
+## Automatic installation with ``webdriver-manager``
 
 > These instructions might not work behind a corporate proxy as some IPs could be blocked 
 > even if you specify the ``--proxy`` option.
