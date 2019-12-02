@@ -1,17 +1,19 @@
-# thekla-examples
+---
+title: Preparation
+has_children: true
+nav_order: 1
+---
 
-Examples to use thekla with Cucumber and Jasmine
+# Preparation
 
-## Preparation
-
-### Install Git
+## Install Git
 
 * [Install Git on MacOS, Linux or Windows](https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/)
 
 > No admin rights on Windows? Use the portable edition.
 > Don't forget to add git.exe to your path variable
 
-### Install nodejs
+## Install nodejs
 
 * [Install the latest nodejs LTS version](https://nodejs.org/en/download/)
 * [Install on Windows without admin rights](https://medium.com/@github.gkarthiks/how-to-install-nodejs-and-npm-in-non-admin-access-windows-machines-102fd461b54c)
@@ -27,11 +29,11 @@ npm --version
 $ 6.12.0    
 ```
 
-### Install Selenium
+## Install Selenium
 
 Checkout the [Selenium Installation Instructions](../docs/INSTALL_SELENIUM.md)
 
-## Clone the Repository
+# Clone the Repository
   
 Make sure you have a selenium standalone server running locally.
 
@@ -52,26 +54,7 @@ install the packages
 npm install
 ````
 
-## Available courses
+# Available courses
 
 * [`cucumber`](../courses/cucumber/README.md)
 
-## Available examples
-
-* [``01_Quick_Start_Guide``](01_Quick_Start_Guide) - Enter a search string into Googles search bar
-* [``02_Use_Tasks_and_Page_Objects``](02_Use_Tasks_and_Page_Objects) - how to create tasks and organize your elements in page objects
-* [``50_Use_a_Rest_Api``](50_Use_a_Rest_Api) - use a Rest API to add two numbers
-
-### Run the examples
-
-To run the examples use:
-
-```bash
-npm run '<EXAMPLES_FOLDER>'
-```
-
-for example
-
-```bash
-npm run 01_Quick_Start_Guide
-```
