@@ -1,8 +1,8 @@
 ---
 title: Install Selenium
-parent: title: Test Automation Examples
+parent: Test Automation Examples
 has_children: false
-nav_order: 10
+nav_order: 20
 ---
 
 # Install Selenium
