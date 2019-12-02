@@ -12,7 +12,7 @@ nav_order: 20
 
 ## Run the Examples
 
-First [prepare](examples/README.md) your environment.
+First [prepare](docs/PREPARATION.md) your environment.
 
 To run the examples use:
 

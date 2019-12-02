@@ -1,10 +1,11 @@
 ---
-title: Preparation
-has_children: true
-nav_order: 1
+title: Install Selenium
+parent: title: Test Automation Examples
+has_children: false
+nav_order: 10
 ---
 
-# Preparation
+# General Preparation
 
 ## Install Git
 
@@ -31,7 +32,7 @@ $ 6.12.0
 
 ## Install Selenium
 
-Checkout the [Selenium Installation Instructions](../docs/INSTALL_SELENIUM.md)
+Checkout the [Selenium Installation Instructions](INSTALL_SELENIUM.md)
 
 # Clone the Repository
   
