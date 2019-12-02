@@ -1,3 +1,10 @@
+---
+title: Install Selenium
+parent: --- Code Examples ---
+has_children: false
+nav_order: 10
+---
+
 # Install Selenium
 
 ## Manual installation by downloading the server and driver files

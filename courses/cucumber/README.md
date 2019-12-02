@@ -4,7 +4,7 @@ has_children: true
 nav_order: 11
 ---
 
-# Using cucumber
+# Testing with cucumber
 
 This folder contains multiple projects which will give you a short overview on how
 to use cucumber. All feature files in each folder can be executed by ``cucumber-js``. 
