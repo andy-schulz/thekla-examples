@@ -6,7 +6,7 @@ nav_order: 1
 
 # Test Automation Examples
 
-* ``Couses``
+* ``Courses``
     * [Getting started with cucumber](courses/cucumber/README.md)
     * Getting started with jasmine
     * Getting started with mocha

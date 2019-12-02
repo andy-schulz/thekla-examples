@@ -1,5 +1,5 @@
 ---
-title: Install Selenium
+title: General Preparation
 parent: Test Automation Examples
 has_children: false
 nav_order: 10
