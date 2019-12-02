@@ -11,11 +11,11 @@ I dont like having the step definitions mixed within the features folder. Instea
 have the folder structure like so:
 
 ````
-features
-    -> all my *.feature files organised in folders
-src
-    -> __step_definition__
-        -> all my javascript *.js step definitions files organised in folders
+├─ features
+|   ├─ all my *.feature files organised in folders
+├─ src
+|   ├─ __step_definition__
+|   |   ├─ all my javascript *.js step definitions files organised in folders
 ````
 
 Check out the current folder structure to see what I mean in detail.

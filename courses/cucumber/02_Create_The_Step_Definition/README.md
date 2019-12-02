@@ -31,10 +31,10 @@ folder the actual step definitions are located in one or more js-files.
 Check the current folder and see that the following structure exists:
 
 ````
-features
-    -> add_numbers.feature
-    -> step_definition
-        -> the_steps.js
+├─features
+|   ├─ add_numbers.feature
+|   ├─ step_definition
+|   |   ├─ the_steps.js
 ````
 
 The `the_steps.js` file then implements the following functions as follows:
