@@ -4,3 +4,4 @@ remote_theme: pmarsceill/just-the-docs
 search_enabled: true
 exclude:
   - dist/*/*.*
+theme: jekyll-theme-architect
