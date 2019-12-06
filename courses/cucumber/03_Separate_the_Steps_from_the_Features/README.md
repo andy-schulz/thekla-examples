@@ -5,7 +5,7 @@ has_children: false
 nav_order: 30
 ---
 
-# Separating the step definitions for the feature files
+# Separating the Step Definitions from the Feature Files
 
 I dont like having the step definitions mixed within the features folder. Instead I like to
 have the folder structure like so:

@@ -5,7 +5,7 @@ has_children: false
 nav_order: 20
 ---
 
-# The first step definition
+# The first Step Definition
 
 To automate a scenario "step definitions" which act as glue between gherkin and the automation framework.
 
