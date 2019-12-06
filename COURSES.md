@@ -1,7 +1,7 @@
 ---
 title: --- Courses ---
 has_children: true
-nav_order: 10
+nav_order: 10:q
 ---
 
 # Available Courses
@@ -12,16 +12,11 @@ nav_order: 10
 
 ## Prepare Environment
 
-
-### Install and configure VS Code
-
-[Install VS Code](docs/PREPARATION.md/#install-vs-code)
-
-To follow the Cucumber Course
-
-1. Start VS Code and [Install Cucumber Full Support Plugin](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
-
-### Install NodeJS
+1. Make sure you have [VS Code installed](docs/PREPARATION.md/#install-vs-code).
+    * To follow the Cucumber Course
+    * Start VS Code and [Install Cucumber Full Support Plugin](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
+1. Follow the instruction to install [NodeJS](docs/PREPARATION.md/#install-nodejs) 
+and [Git](docs/PREPARATION.md/#install-git)
 
 ### Get the code examples 
 
@@ -29,7 +24,7 @@ To follow the Cucumber Course
 git clone https://github.com/andy-schulz/thekla-examples.git
 ```
 
-### Install packages
+Install node packages
 
 ````shell script
 cd thekla-examples/courses/
@@ -37,7 +32,10 @@ cd thekla-examples/courses/
 npm install
 ````
 
-### Run the Courses
+and check that cucumber is installed:
 
+````shell script
+npx cucumber-js --version
+```` 
 
 

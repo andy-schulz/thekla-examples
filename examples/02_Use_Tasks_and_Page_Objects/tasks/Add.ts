@@ -1,4 +1,4 @@
-import * as GoogleCalculator          from "../page_objects/GoogleCalculator";
+import * as GoogleCalculator          from "../elements/GoogleCalculator";
 import {Task, PerformsTask, Activity} from "@thekla/core";
 import {Click}                        from "@thekla/web-and-mobile-abilities";
 

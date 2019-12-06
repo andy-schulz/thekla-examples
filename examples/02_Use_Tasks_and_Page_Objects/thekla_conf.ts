@@ -1,4 +1,4 @@
-import {TheklaConfig} from "@thekla/config/dist";
+import {TheklaConfig} from "@thekla/config";
 
 export const config: TheklaConfig = {
     specs: [`dist/02_Use_Tasks_and_Page_Objects/calculator_example_spec.js`],

@@ -2,7 +2,7 @@ import {getLogger}                                                       from "l
 import * as Conf                                                         from "@thekla/config";
 import {Actor, Expected, See}                                            from "@thekla/core";
 import {BrowseTheWeb, RunningBrowser, Navigate, Enter, Click, Key, Text} from "@thekla/web-and-mobile-abilities";
-import {GOOGLE_SEARCH_FIELD, GOOGLE_SUBMIT_BUTTON, CALCULATOR_INPUT}     from "./page_objects/GoogleSearch";
+import {GOOGLE_SEARCH_FIELD, GOOGLE_SUBMIT_BUTTON, CALCULATOR_INPUT}     from "./elements/GoogleSearch";
 import {Add}                                                             from "./tasks/Add";
 
 declare const thekla: Conf.TheklaGlobal;

@@ -10,7 +10,7 @@ import {
     Text
 }                                                                                    from "@thekla/web-and-mobile-abilities";
 import {getLogger}                                                                   from "log4js"
-import {CALCULATOR_INPUT_NO_WAIT, GOOGLE_SEARCH_FIELD_NO_WAIT, GOOGLE_SUBMIT_BUTTON} from "./page_objects/GoogleSearch";
+import {CALCULATOR_INPUT_NO_WAIT, GOOGLE_SEARCH_FIELD_NO_WAIT, GOOGLE_SUBMIT_BUTTON} from "./elements/GoogleSearch";
 import {Add}                                                                         from "./tasks/Add";
 
 declare const thekla: Conf.TheklaGlobal;

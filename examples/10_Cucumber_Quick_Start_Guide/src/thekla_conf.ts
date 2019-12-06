@@ -2,14 +2,9 @@ import {TheklaConfig} from "@thekla/config";
 
 export default {
 
-    specs: [`dist/01_Quick_Start_Guide/google_search_spec.js`],
+    specs: [`features/**/*.feature`],
 
     serverConfig: {
-
-        automationFramework: {
-            logLevel: `silent`
-        },
-
         serverAddress: {
             hostname: `localhost`,
             port: 4444,
@@ -23,9 +18,12 @@ export default {
     },
 
     testFramework: {
-        frameworkName: `jasmine`,
-        jasmineOptions: {
-            defaultTimeoutInterval: 20 * 1000
+        frameworkName: `cucumber`,
+        cucumberOptions: {
+            require: [
+                `dist/10_Cucumber_Quick_Start_Guide/src/__step_definition__/**/*.js`
+            ]
         }
     }
+
 } as TheklaConfig
