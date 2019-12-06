@@ -20,9 +20,9 @@ and [Git](docs/PREPARATION.md/#install-git)
 
 ### Get the code examples 
 
-```shell script
+````shell script
 git clone https://github.com/andy-schulz/thekla-examples.git
-```
+````
 
 Install node packages
 
