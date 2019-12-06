@@ -5,8 +5,7 @@
     "sourceMap": true,
     "outDir": "dist",
     "rootDirs": [
-      "examples",
-      "courses"
+      "cucumber"
     ],
     "strict": true,
     "noImplicitAny": true,
