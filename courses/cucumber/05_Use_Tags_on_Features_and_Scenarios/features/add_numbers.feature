@@ -15,3 +15,10 @@ Feature: Add two Numbers
     Given Bernhard opened a calculator
     When he adds the numbers -1 and -2
     Then he can see the result -3
+
+  @Positive @Negative
+  Scenario: Add positive and negative numbers
+
+    Given Bernhard opened a calculator
+    When he adds the numbers 1 and -2
+    Then he can see the result -1
