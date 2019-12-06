@@ -1,9 +1,3 @@
----
-title: Start
-has_children: false
-nav_order: 1
----
-
 # Test Automation Examples
 
 * ``Courses``
