@@ -1,0 +1,27 @@
+{
+  "name": "@thekla/examples",
+  "private": true,
+  "description": "thekla test examples",
+  "scripts": {
+    "prepare": "tsc"
+  },
+  "keywords": [
+    "examples",
+    "cucumber"
+  ],
+  "homepage": "https://andy-schulz.github.io/thekla-examples/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy-schulz/thekla-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andy-schulz/thekla-examples/issues"
+  },
+  "author": "Andy Schulz",
+  "license": "MIT",
+  "dependencies": {
+    "cucumber": "^5.1.0",
+    "del-cli": "^3.0.0",
+    "log4js": "^5.3.0"
+  }
+}
