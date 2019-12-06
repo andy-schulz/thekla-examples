@@ -2,5 +2,8 @@ title: "Test Automation Examples"
 name: Andy Schulz, Test Automation Engineer
 remote_theme: pmarsceill/just-the-docs
 search_enabled: true
+aux_links:
+  "check the code":
+    - "//github.com/andy-schulz/thekla-examples/"
 exclude:
   - reference/*/part_*.*
