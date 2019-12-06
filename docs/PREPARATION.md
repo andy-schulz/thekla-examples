@@ -7,6 +7,10 @@ nav_order: 10
 
 # General Preparation
 
+## Install VS Code
+
+1. [Download and Install VSCode](https://code.visualstudio.com/docs?dv=win)
+
 ## Install Git
 
 * [Install Git on MacOS, Linux or Windows](https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/)
