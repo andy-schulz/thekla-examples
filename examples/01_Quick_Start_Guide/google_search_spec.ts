@@ -7,8 +7,6 @@ import {RunningBrowser, SppElement, BrowseTheWeb, element, By, UntilElement, Nav
 declare const thekla: Conf.TheklaGlobal;
 
 describe(`Search on Google with thekla`, function () {
-    jasmine.DEFAULT_TIMEOUT_INTERVAL = 40000;
-
     let googleSearchField: SppElement;
     let jonathan: Actor;
 
@@ -16,7 +14,7 @@ describe(`Search on Google with thekla`, function () {
 
         // create a browser with the configuration
         const aBrowser = RunningBrowser
-        // get the server config from theklas config file
+            // get the server config from theklas config file
             .startedOn(thekla.serverConfig())
             // get the capabilities from theklas config file
             .withCapabilities(thekla.capabilities());
