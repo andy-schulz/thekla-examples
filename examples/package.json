@@ -1,0 +1,48 @@
+{
+  "name": "@thekla/examples",
+  "private": true,
+  "description": "thekla test examples",
+  "scripts": {
+    "50": "npx --no-install thekla dist/10_Use_a_Rest_Api/thekla_conf.js",
+    "cucumber:first_feature": "npx cucumber-js ../courses/cucumber/01_Create_A_Feature_File/features/add_numbers.feature",
+    "cucumber:first_steps": "npx cucumber-js ../courses/cucumber/02_Create_The_Step_Definition/features/add_numbers.feature",
+    "prepare": "./node_modules/.bin/tsc",
+    "test": "npx --no-install thekla dist/thekla_conf.js",
+    "example:01": "npx --no-install thekla dist/01_Quick_Start_Guide/thekla_conf.js",
+    "example:01_Quick_Start_Guide": "npm run 01",
+    "example:02": "npx --no-install thekla dist/02_Use_Tasks_and_Page_Objects/thekla_conf.js",
+    "example:02_Use_Tasks_and_Page_Objects": "npm run 02",
+    "example:02:implicitWait": "npx --no-install thekla dist/02_Use_Tasks_and_Page_Objects/thekla_implicit_wait_conf.js",
+    "example:02_Use_Tasks_and_Page_Objects:implicitWait": "npm run 02:implicitWait",
+    "example:50_Use_a_Rest_Api": "npm run 10"
+  },
+  "keywords": [
+    "thekla",
+    "screenplay",
+    "examples"
+  ],
+  "homepage": "https://andy-schulz.github.io/thekla/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy-schulz/thekla.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andy-schulz/thekla/issues"
+  },
+  "author": "Andy Schulz",
+  "license": "MIT",
+  "dependencies": {
+    "@thekla/config": "^2.4.0",
+    "@thekla/core": "^2.4.0",
+    "@thekla/rest-abilities": "^2.4.0",
+    "@thekla/web-and-mobile-abilities": "^2.4.0",
+    "@types/jasmine": "^3.5.0",
+    "cucumber": "^5.1.0",
+    "del-cli": "^3.0.0",
+    "jasmine": "^3.5.0",
+    "log4js": "^5.3.0",
+    "thekla": "^2.4.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.2"
+  }
+}

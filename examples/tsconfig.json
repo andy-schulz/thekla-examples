@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDirs": [
+    ],
+    "strict": true,
+    "noImplicitAny": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}

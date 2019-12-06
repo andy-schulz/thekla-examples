@@ -1,0 +1,33 @@
+{
+  "name": "@thekla/examples",
+  "private": true,
+  "description": "thekla test examples",
+  "scripts": {
+    "prepare": "tsc",
+    "cucumber:01": "npx cucumber-js cucumber/01_Create_A_Feature_File/features/**/*.feature",
+    "cucumber:02": "npx cucumber-js cucumber/02_Create_The_Step_Definition/features/**/*.feature",
+    "cucumber:03": "npx cucumber-js cucumber/03_Separate_the_Steps_from_the_Features/features/**/*.feature",
+    "cucumber:04": "npx cucumber-js cucumber/04_Parse_Data_from_the_Step_Phrases/features/**/*.feature --require cucumber/04_Parse_Data_from_the_Step_Phrases/src/__step_definition__",
+    "cucumber:05": "npx cucumber-js cucumber/05_Use_Tags_on_Features_and_Scenarios/features/**/*.feature --require cucumber/05_Use_Tags_on_Features_and_Scenarios/src/__step_definition__"
+  },
+  "keywords": [
+    "examples",
+    "cucumber"
+  ],
+  "homepage": "https://andy-schulz.github.io/thekla-examples/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy-schulz/thekla-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andy-schulz/thekla-examples/issues"
+  },
+  "author": "Andy Schulz",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cucumber": "^4.0.7",
+    "cucumber": "^5.1.0",
+    "del-cli": "^3.0.0",
+    "log4js": "^5.3.0"
+  }
+}
