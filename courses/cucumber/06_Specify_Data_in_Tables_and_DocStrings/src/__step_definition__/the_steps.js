@@ -12,6 +12,7 @@ When(`he adds the numbers`, function (table) {
 When(`he adds the numbers {int} and {int}`, function (int, int2) {
     const myFirstParameter = int;
     const mySecondParameter = int2;
+
     console.log(`First Parameter ${myFirstParameter}`);
     console.log(`Second Parameter ${mySecondParameter}`);
 

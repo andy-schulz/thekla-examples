@@ -2,6 +2,7 @@ Feature: Add two Numbers
 
   The "calculator" can add two numbers
 
+  @UseDataTable
   Scenario: Add positive numbers
 
     Use a data table in a step
@@ -13,7 +14,7 @@ Feature: Add two Numbers
     Then he can see the result 3
 
 
-
+  @UseScenarioOutline
   Scenario Outline: Add multiple positive numbers - (check that adding <firstNumber> to <secondNumber> results in <result>)
 
     Use a data table for the whole scenario
