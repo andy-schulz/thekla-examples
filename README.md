@@ -1,9 +1,3 @@
----
-title: Test Automation Examples
-has_children: true
-nav_order: 1
----
-
 # Test Automation Examples
 
 * ``Courses``
