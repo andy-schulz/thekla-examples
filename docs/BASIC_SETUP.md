@@ -21,10 +21,17 @@ nav_order: 10
 ## Install nodejs
 
 * [Install the latest nodejs LTS version](https://nodejs.org/en/download/)
-* [Install on Windows without admin rights](https://medium.com/@github.gkarthiks/how-to-install-nodejs-and-npm-in-non-admin-access-windows-machines-102fd461b54c)
 
-Check that nodejs was installed successfully getting the version number.
-You version number may be different.
+### Install nodejs on Windows without admin rights
+
+1. Download the Windows Binary from [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+1. Extract the archive to a folder of your choice, e.g. ``C:\Portable\node_vXX``
+1. add the nodejs folder to your PATH variable 
+
+If you are behind a corporate proxy you have to [set the proxy and https-proxy configuration](https://gist.github.com/alienlebarge/10260853).
+
+Check that nodejs was installed successfully by printing the version number from a command prompt.
+Your version number may vary.
 
 ```bash
 node --version
