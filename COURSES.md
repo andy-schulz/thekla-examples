@@ -12,11 +12,7 @@ nav_order: 10
 
 ## Prepare Environment
 
-1. Make sure you have [VS Code installed](docs/PREPARATION.md/#install-vs-code).
-    * To follow the Cucumber Course
-    * Start VS Code and [Install Cucumber Full Support Plugin](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
-1. Follow the instruction to install [NodeJS](docs/PREPARATION.md/#install-nodejs) 
-and [Git](docs/PREPARATION.md/#install-git)
+[Setup your environment.](docs/BASIC_SETUP.md)
 
 ### Get the code examples 
 

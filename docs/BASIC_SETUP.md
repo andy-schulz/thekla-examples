@@ -1,6 +1,6 @@
 ---
-title: General Preparation
-parent: Test Automation Examples
+title: Basic Test Setup
+parent: Environment Setup
 has_children: false
 nav_order: 10
 ---
@@ -33,33 +33,3 @@ $ v.12.13.0
 npm --version
 $ 6.12.0    
 ```
-
-## Install Selenium
-
-Checkout the [Selenium Installation Instructions](INSTALL_SELENIUM.md)
-
-# Clone the Repository
-  
-Make sure you have a selenium standalone server running locally.
-
-clone the repository
-
-````bash
-git clone https://github.com/andy-schulz/thekla-examples.git
-````
-
-go to the examples project
-````
-cd thekla-examples
-````
-
-install the packages
-
-````bash
-npm install
-````
-
-# Available courses
-
-* [`cucumber`](../courses/cucumber/README.md)
-
