@@ -11,6 +11,9 @@ When(`he adds the numbers {int} and {int}`, function (int, int2) {
 });
 
 Then(/he can see the result (.*)/, function (int) {
-    console.log(`Executed Scenario with Expected Result: ${int}`);
+
+    console.log(`
+    Executed Scenario with Expected Result: ${int}`);
+
     return `success`;
 });

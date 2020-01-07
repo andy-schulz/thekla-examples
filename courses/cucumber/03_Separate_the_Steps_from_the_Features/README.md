@@ -5,10 +5,13 @@ has_children: false
 nav_order: 30
 ---
 
-# Separating the Step Definitions from the Feature Files
+# Separate Steps and Features
+{: .no_toc}
 
-I dont like having the step definitions mixed within the features folder. Instead I like to
-have the folder structure like so:
+1. TOC
+{:toc}
+
+## Example Content
 
 ````
 ├─ features
@@ -18,7 +21,14 @@ have the folder structure like so:
 |   |   ├─ all my javascript *.js step definitions files organised in folders
 ````
 
-Check out the current folder structure to see what I mean in detail.
+[check the source](https://github.com/andy-schulz/thekla-examples/tree/master/courses/cucumber/03_Separate_the_Steps_from_the_Features)
+
+## Separating the Step Definitions from the Feature Files
+
+I dont like having the step definitions mixed within the features folder. 
+
+I like to have the step definition under a src folder and not mixed with the features 
+(see folder structure above)
 
 When you run
 

@@ -5,7 +5,28 @@ has_children: false
 nav_order: 40
 ---
 
+# Parse Data from Steps
+{: .no_toc}
+
+1. TOC
+{:toc}
+
 # Parse Data from a Cucumber Step Phrase
+
+## Example Content
+
+```text
+├─ features
+|   ├─ 01_add_numbers.feature 
+|   |         /* a simple addition scenario */
+├─ src
+|   ├─ __step_definition__
+|   |   ├─ the_steps.js
+                /* step definition with simple cucumber expressions */
+```
+
+[check the source](https://github.com/andy-schulz/thekla-examples/tree/master/courses/cucumber/04_Parse_Data_from_the_Step_Phrases)
+
 
 ## Using Simple Expressions
 

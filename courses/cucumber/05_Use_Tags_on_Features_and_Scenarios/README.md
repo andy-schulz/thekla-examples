@@ -5,7 +5,27 @@ has_children: false
 nav_order: 50
 ---
 
+# Using Tags
+{: .no_toc}
+
+1. TOC
+{:toc}
+
 # Using Tags in Features and Scenarios
+
+## Example Content
+
+```text
+├─ features
+|   ├─ 01_add_numbers.feature 
+|   |         /* multiple scenarios demonstration the use of tags */
+├─ src
+|   ├─ __step_definition__
+|   |   ├─ the_steps.js
+                /* step definition for the tagged addition examples */
+```
+
+[check the source](https://github.com/andy-schulz/thekla-examples/tree/master/courses/cucumber/05_Use_Tags_on_Features_and_Scenarios)
 
 ## Why using tags?
 

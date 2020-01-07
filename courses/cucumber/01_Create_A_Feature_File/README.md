@@ -5,6 +5,12 @@ has_children: false
 nav_order: 10
 ---
 
+# Create a Feature File
+{: .no_toc}
+
+1. TOC
+{:toc}
+
 # A single feature file
 
 A simple feature file consists of:
