@@ -38,6 +38,10 @@ and check that cucumber is installed:
 
 ````bash
 npx cucumber-js --version
-```` 
+````
 
+should output:
 
+````bash
+5.1.0
+````
