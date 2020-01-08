@@ -21,17 +21,17 @@ nav_order: 10
 If you are behind a corporate proxy set the HTTP_PROXY and HTTPS_PROXY variables or set the
 proxy directly in your git config:
 
-```shell script
+````shell script
 git config --global http.proxy "http://proxy.mycompany.com:PORT"
 git config --global https.proxy "http://proxy.mycompany.com:PORT"
-```
+````
 
 and with an authenticated proxy use:
 
-```shell script
+````shell script
 git config --global http.proxy "http://USERNAME:PASSWORD@proxy.mycompany.com:PORT"
 git config --global https.proxy "http://USERNAME:PASSWORD@proxy.mycompany.com:PORT"
-```
+````
 
 For more details check the [git proxy gist](https://gist.github.com/evantoli/f8c23a37eb3558ab8765).
 
