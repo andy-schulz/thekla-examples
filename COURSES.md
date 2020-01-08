@@ -16,14 +16,18 @@ nav_order: 10
 
 ### Get the code examples 
 
+I recommend creating a separate folder like ``projects`` or ``Projects`` for your repos.
+
 ````bash
+cd <MY_PROJECTS_FOLDER>
+
 git clone https://github.com/andy-schulz/thekla-examples.git
 ````
 
 Install node packages
 
 ````bash
-cd thekla-examples/courses/
+cd <MY_PROJECTS_FOLDER>/thekla-examples/courses/
 
 npm install
 ````
