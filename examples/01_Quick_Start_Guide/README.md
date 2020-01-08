@@ -13,7 +13,7 @@ nav_order: 10
 
 The simplest test consists of two files, the configuration file and the test specification file.
 
-````shell script
+````bash
 |-- thekla_conf.ts
 |-- google_search_spec.ts
 ````
@@ -157,14 +157,14 @@ file into the dist folder.
 
 The test can be started directly by passing the transpiled conf to thekla.
 
-````shell script
+````bash
 npx thekla dist/01_Quick_Start_Guide/thekla_conf.js
 ````
 > npx is searching for the thekla binary in the PATH and the local installation. 
 
 Or the test can be started by using the npm script:
 
-````shell script
+````bash
 npm run example:01
 ````
 

@@ -16,13 +16,13 @@ nav_order: 10
 
 ### Get the code examples 
 
-````shell script
+````bash
 git clone https://github.com/andy-schulz/thekla-examples.git
 ````
 
 Install node packages
 
-````shell script
+````bash
 cd thekla-examples/courses/
 
 npm install
@@ -30,7 +30,7 @@ npm install
 
 and check that cucumber is installed:
 
-````shell script
+````bash
 npx cucumber-js --version
 ```` 
 

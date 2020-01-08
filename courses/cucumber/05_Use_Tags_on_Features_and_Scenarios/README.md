@@ -82,12 +82,12 @@ Second your are able to execute features based on the given tags. Which comes in
 A tag can be specified by passing the ``--tags`` option 
 
 1. Execute all ``@BasicArithmetic`` scenarios
-    ````shell script
+    ````bash
     npx cucumber-js --require src/__step_definition__/**/*.js --tags @BasicArithmetic
     ````
    should result in the following output
    
-   ````shell script
+   ````bash
     ..Executed Scenario with Expected Result: 3
     ...Executed Scenario with Expected Result: -3
     ...Executed Scenario with Expected Result: -1
@@ -101,13 +101,13 @@ A tag can be specified by passing the ``--tags`` option
    All three scenarios were executed.
    
 1. Execute all ``@Positive`` scenarios
-    ````shell script
+    ````bash
     npx cucumber-js --require src/__step_definition__/**/*.js --tags @Positive
     ````
    
    should result in the following output
 
-    ````shell script
+    ````bash
     ..Executed Scenario with Expected Result: 3
     ...Executed Scenario with Expected Result: -1
     .

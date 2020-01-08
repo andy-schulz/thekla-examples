@@ -20,12 +20,13 @@ First download and extract the following files into a folder of your choice
 
 Your folder should now contain the following files:
 
-``
-selenium-server-standalone.jar
-chromedriver.exe
-geckodriver.exe
+````
+├─ selenium-server-standalone.jar
+├─ chromedriver.exe
+├─ geckodriver.exe
 
-``
+````
+
 > If you want to keep the version information on those files, change the start script accordingly
 
 start the selenium server as follows:
