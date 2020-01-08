@@ -33,7 +33,7 @@ Your folder should now contain the following files:
 
 > If you want to keep the version information on those files, change the start script accordingly
 
-## Start Selenium
+### Start Selenium
 
 start the selenium server as follows:
 
@@ -46,7 +46,7 @@ java -jar selenium-server-standalone.jar -port 4444
 
 The browser driver are automatically detected.
 
-## Stop Selenium
+### Stop Selenium
 
 To stop the server press ``Ctrl + c`` within the terminal running Selenium.
 
@@ -71,11 +71,15 @@ Get the latest selenium standalone and Chrome / Firefox driver.
 webdriver-manager update
 ```
 
+### Start Selenium
+
 Start the Selenium Server.
 
 ```bash
 webdriver-manager start
 ```
+
+### Stop Selenium
 
 Stop the Selenium Server.
 
