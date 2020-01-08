@@ -16,7 +16,24 @@ nav_order: 10
 * [Install Git on MacOS, Linux or Windows](https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/)
 
 > No admin rights on Windows? Use the portable edition.
-> Don't forget to add git.exe to your path variable
+> Don't forget to add the path with git.exe to your PATH variable
+
+If you are behind a corporate proxy set the HTTP_PROXY and HTTPS_PROXY variables or set the
+proxy directly in your git config:
+
+```shell script
+git config --global http.proxy "http://proxy.mycompany.com:PORT"
+git config --global https.proxy "http://proxy.mycompany.com:PORT"
+```
+
+and with an authenticated proxy use:
+
+```shell script
+git config --global http.proxy "http://USERNAME:PASSWORD@proxy.mycompany.com:PORT"
+git config --global https.proxy "http://USERNAME:PASSWORD@proxy.mycompany.com:PORT"
+```
+
+For more details check the [git proxy gist](https://gist.github.com/evantoli/f8c23a37eb3558ab8765).
 
 ## Install nodejs
 
