@@ -6,6 +6,10 @@ nav_order: 20
 ---
 
 # Install Selenium
+{: .no_toc}
+
+1. TOC
+{:toc}
 
 ## Manual installation by downloading the server and driver files
 
@@ -29,14 +33,22 @@ Your folder should now contain the following files:
 
 > If you want to keep the version information on those files, change the start script accordingly
 
+## Start Selenium
+
 start the selenium server as follows:
 
 ```bash
 cd <YOUR_SELENIUM_FOLDER>
 
-java selenium-server-standalone.jar -port 4444
+java -jar selenium-server-standalone.jar -port 4444
 
 ```
+
+The browser driver are automatically detected.
+
+## Stop Selenium
+
+To stop the server press ``Ctrl + c`` within the terminal running Selenium.
 
 ## Automatic installation with ``webdriver-manager``
 

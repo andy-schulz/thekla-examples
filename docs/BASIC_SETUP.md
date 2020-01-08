@@ -6,6 +6,10 @@ nav_order: 10
 ---
 
 # General Preparation
+{: .no_toc}
+
+1. TOC
+{:toc}
 
 ## Install VS Code
 
