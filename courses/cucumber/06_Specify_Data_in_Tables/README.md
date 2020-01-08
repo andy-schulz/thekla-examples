@@ -94,9 +94,9 @@ Table elements are separated by ``|`` and each row must start and end with a ``|
 In this example above I used the first line as a header. Gherkin itself does not define a header line by default.
 
 When you create the step definition you can specify if the first line or the first column shall
-be interpreted as a header row or a header column, so cucumber-js takes care of it.
+be interpreted as a header row or a header column.
 
-You are even able to specify the first column as as a value description. 
+Cucumber-js can then interpret the first line or the fist column as attribute names.
 
 ```gherkin
     Given something
@@ -106,11 +106,11 @@ You are even able to specify the first column as as a value description.
     Then check something else
 ```
 
-for Gherkin the two examples are the same.
+for Gherkin itself the two examples (header row / header column) are the same.
 
 ## Access the data in a data table
 
-The following shows the four possible ways to transform a data table:
+Cucumber-js has four possible ways to transform a data table:
 
 ```gherkin
   Scenario: Use Data Tables WITH a Header
@@ -152,7 +152,7 @@ Lets start with the first data table step:
       | a              | b               |
 ```
 
-The following step definition: 
+The following step definition (using ``dataTable.hashes()``): 
 
 ```javascript
 Given(/We can transform the table to an object using "dataTable.hashes\(\)"/, function (dataTable) {
@@ -181,9 +181,10 @@ will output:
     ]
 ```
 
-The elements of the first row are used as attributes, the following rows contain the data values.
+The elements of the first row are used as attribute names (``firstAttribure`` / ``secondAttribute``) 
+and the remaining rows contain the attribute values.
 
-Printing the same data table in its raw format:
+Printing the same data table in its raw format (using ``dataTable.raw()``):
 
 ```javascript
 Given(/We can transform the table to plain 2D Array using "dataTable.raw\(\)"/, function (dataTable) {
@@ -216,7 +217,7 @@ will output:
     ]
 ```
 
-Now the first line is interpreted as a standard table row as the lines two and three.
+Now the first line is interpreted as a standard table row as well as the lines two and three.
 
 # Specify multiple examples within one scenario
 
