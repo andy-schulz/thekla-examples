@@ -18,6 +18,8 @@ nav_order: 10
 
 I recommend creating a separate folder like ``projects`` or ``Projects`` for your repos.
 
+In a Terminal / Powershell / CMD do:
+
 ````bash
 cd <MY_PROJECTS_FOLDER>
 
