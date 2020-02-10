@@ -94,10 +94,11 @@ layout: table_wrappers
                     {% endif %}
 
                 </div>
+                <div class="page_toc">
+                    {% include toc.html html=content id="page_toc" %}
+                </div>
             </div>
-            <div class="page_toc">
-                {% include toc.html html=content id="page_toc" %}
-            </div>
+
         </div>
     </div>
 </body>
