@@ -10,7 +10,7 @@ nav_order: 20
 1. TOC
 {:toc}
 
-# The first Step Definition
+## The first Step Definition
 
 To automate a scenario "step definitions" which act as glue between gherkin and the automation framework.
 
@@ -110,7 +110,7 @@ It has the following meaning
  
 
 
-# Exercises
+## Exercises
 
 1. change the status of each step so that the given scenario is executed successfully
 2. make the second step fail and observe the result in the terminal
