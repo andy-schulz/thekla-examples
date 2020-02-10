@@ -8,10 +8,7 @@ nav_order: 10
 # Create a Feature File
 {: .no_toc}
 
-1. TOC
-{:toc}
-
-# A single feature file
+## A single feature file
 
 A simple feature file consists of:
 
@@ -21,8 +18,7 @@ A simple feature file consists of:
 1. an optional scenario description
 1. the scenario steps starting with Given, When, Then
 
-
-```gherkin
+````gherkin
 # Comments to a feature file can be added by preceding the line with #
 # A Feature as marked with the keyword Feature: followed by the feature name
 Feature: Add two Numbers
@@ -40,7 +36,7 @@ Feature: Add two Numbers
     Given Bernhard opened a calculator
     When he adds the numbers 1 and 2
     Then he can see the result 3
-```
+````
 
 ## Folder Structure
 
@@ -48,7 +44,7 @@ Features are stored in a folder called ``features``
 
 If you check the current directory it should look like this:
 
-````
+````text
 ├─ features
 |   ├─ add_numbers.feature   .... the feature file
 ├─ README.md                 .... this README file
@@ -69,7 +65,6 @@ npx cucumber-js
 ````
 
 > What is npx?
-> 
 > cucumber-js can be installed in 2 ways, globally and locally. To not pollute your systems its best to install
 > cucumber locally, meaning its installed only in the project folder (node_modules). NPX just finds and executes
 > the cucumber-js start script in your node_modules folder, so you dont have to find it yourself or set any PATH variables.
@@ -123,7 +118,7 @@ In addition cucumber even gives you a hint what you need to do to execute the sc
 
 ````bash
     Undefined. Implement with the following snippet:
-    
+
      Given('Bernhard opened a calculator', function () {
        // Write code here that turns the phrase above into concrete actions
        return 'pending';
@@ -133,13 +128,11 @@ In addition cucumber even gives you a hint what you need to do to execute the sc
 
 We will implement the step definitions in the next example.
 
-# Exercises
+## Exercises
 
 1. Add a new step to the scenario and check the output after feature execution
 1. Create new feature to subtract positive numbers from each other
     * start cucumber and check the output
     * make sure cucumber executes your new feature file
-
-
 
 [Next: Create your first step definition](../02_Create_The_Step_Definition/README.md)
