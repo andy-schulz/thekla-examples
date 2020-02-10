@@ -8,9 +8,6 @@ nav_order: 30
 # Separate Steps and Features
 {: .no_toc}
 
-1. TOC
-{:toc}
-
 ## Example Content
 
 ````
@@ -85,7 +82,7 @@ Warnings:
 
 ````
 
-# Exercises
+## Exercises
 
 1. Spread the three Given, When and Then functions across 3 files and place them 
 in the following files ``src/given/given.js``, ``src/when/when.js`` and ``src/then/then.js``.

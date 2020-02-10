@@ -5,6 +5,7 @@ nav_order: 11
 ---
 
 # Testing with cucumber
+{: .no_toc}
 
 This folder contains multiple projects which will give you a short overview on how
 to use cucumber. All feature files in each folder can be executed by ``cucumber-js``. 
@@ -20,6 +21,8 @@ to use cucumber. All feature files in each folder can be executed by ``cucumber-
 1. [Using DocStrings](07_Using_DocStrings/README.md)
 1. [Using the World Object](08_Using_the_World_Object/README.md)
 1. [Hooks for setup and tear down](09_Using_Hooks_to_Setup_and_TearDown/README.md)
+1. [Report the Test Results](10_Report_the_Test_Results/README.md)
+
 
 ## Additional Sources of Information
 

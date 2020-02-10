@@ -8,16 +8,11 @@ nav_order: 50
 # Using Tags
 {: .no_toc}
 
-1. TOC
-{:toc}
-
-# Using Tags in Features and Scenarios
-
 ## Example Content
 
 ```text
 ├─ features
-|   ├─ 01_add_numbers.feature 
+|   ├─ 01_add_numbers.feature
 |   |         /* multiple scenarios demonstration the use of tags */
 ├─ src
 |   ├─ __step_definition__
@@ -27,11 +22,11 @@ nav_order: 50
 
 [check the source](https://github.com/andy-schulz/thekla-examples/tree/master/courses/cucumber/05_Use_Tags_on_Features_and_Scenarios)
 
-## Why using tags?
+## Why using tags
 
 Tags are a way to add additional information and to organize your features and scenarios.
 
-Tags start with an ``@`` and is followed by any number of characters. They are placed 
+Tags start with an ``@`` and is followed by any number of characters. They are placed
 directly above the ``Feature`` and / or ``Scenario`` keywords.
 
 > The example is shortened for clarity, check the code to see the full example.
@@ -54,14 +49,15 @@ Feature: Add two Numbers
   Scenario: Add positive and negative numbers
   # ...
 ````
-As you can see the the feature has the tag ``@BasicArithmetic``. In case you are writing 
-features for subtraction and multiplication, you could assign the same tag, as those calculations 
-are as well basic calculations. All Scenarios in the feature file are now tagged with ``@BasicArithmetic``. 
+
+As you can see the the feature has the tag ``@BasicArithmetic``. In case you are writing
+features for subtraction and multiplication, you could assign the same tag, as those calculations
+are as well basic calculations. All Scenarios in the feature file are now tagged with ``@BasicArithmetic``.
 
 On the other hand a square root could get the tag ``@HigherOrderArithmetic`` as it does not belong to the four
 basic arithmetic operations.
 
-The same tagging strategy can be applied to the individual scenarios. 
+The same tagging strategy can be applied to the individual scenarios.
 
 In the example three scenarios are created and marked with tags:
 
@@ -71,7 +67,7 @@ In the example three scenarios are created and marked with tags:
 
 So then what are the tags good for?
 
-First they represent a nice feature to categorize your elements and give your information without reading 
+First they represent a nice feature to categorize your elements and give your information without reading
 the each and every feature description and scenario.
 
 Second your are able to execute features based on the given tags. Which comes in handy in case you want to create a
@@ -79,50 +75,53 @@ Second your are able to execute features based on the given tags. Which comes in
 
 ## Filter executed scenarios by tags
 
-A tag can be specified by passing the ``--tags`` option 
+A tag can be specified by passing the ``--tags`` option
 
 1. Execute all ``@BasicArithmetic`` scenarios
+
     ````bash
     npx cucumber-js --require src/__step_definition__/**/*.js --tags @BasicArithmetic
     ````
+
    should result in the following output
-   
+
    ````bash
     ..Executed Scenario with Expected Result: 3
     ...Executed Scenario with Expected Result: -3
     ...Executed Scenario with Expected Result: -1
     .
-    
+
     3 scenarios (3 passed)
     9 steps (9 passed)
-    
+
     ````
-   
+
    All three scenarios were executed.
-   
+
 1. Execute all ``@Positive`` scenarios
+
     ````bash
     npx cucumber-js --require src/__step_definition__/**/*.js --tags @Positive
     ````
-   
+
    should result in the following output
 
     ````bash
     ..Executed Scenario with Expected Result: 3
     ...Executed Scenario with Expected Result: -1
     .
-    
+
     2 scenarios (2 passed)
     6 steps (6 passed)
-    
+
     ````
-   
+
 ## Exercises
 
 1. Write a feature Square Root with one scenario and tag the feature as @HigherOrderArithmetic
     * now execute only
 1. Execute the scenario where two positive numbers are added, make sure only one scenario was executed
     * first try to guess how to write those tag expressions, its not difficult
-    *  If you can't think of a solution, have a look at [tag expressions](https://cucumber.io/docs/cucumber/api/#tag-expressions)
+    * If you can't think of a solution, have a look at [tag expressions](https://cucumber.io/docs/cucumber/api/#tag-expressions)
 1. Execute tests which dont add any positive numbers.
     * try to guess the tag expression again, otherwise you can get hints in the documentation listed before.

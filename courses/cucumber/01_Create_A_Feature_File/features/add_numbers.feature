@@ -5,7 +5,7 @@ Feature: Add two Numbers
   The calculator can add two numbers
   # you can add a feature description, which is following the line with the Feature keyword and before the Scenario:
 
-  # A scenario is described with the keyword Scenario: followed by the scenario description
+  # A scenario is described  with the keyword Scenario: followed by the scenario description
   Scenario: Add positive numbers
 
     The calculator should be able to add two positive numbers
@@ -13,5 +13,5 @@ Feature: Add two Numbers
 
     # The scenario steps start with the keywords Given, When, Then followed by the step description
     Given Bernhard opened a calculator
-    When he adds the numbers 1 and 2
+    When he "adds" the numbers 1 and 2
     Then he can see the result 3

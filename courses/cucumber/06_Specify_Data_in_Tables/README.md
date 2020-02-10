@@ -8,20 +8,15 @@ nav_order: 60
 # Using Data Tables
 {: .no_toc}
 
-1. TOC
-{:toc}
-
-# Specify step test data in data tables
-
 ## Example Content
 
 ```text
 ├─ features
-|   ├─ 01_add_numbers.feature 
+|   ├─ 01_add_numbers.feature
 |   |         /* the "Add Numbers" Example using a data table */
-|   ├─ 02_use_data_tables.feature 
+|   ├─ 02_use_data_tables.feature
 |   |         /* data table transformations in detail */
-|   ├─ 03_add_multiple_numbers.feature 
+|   ├─ 03_add_multiple_numbers.feature
 |   |         /* specifying multiple examples with scenario outlines */
 ├─ src
 |   ├─ __step_definition__
@@ -33,19 +28,19 @@ nav_order: 60
 
 [check the source](https://github.com/andy-schulz/thekla-examples/tree/master/courses/cucumber/06_Specify_Data_in_Tables)
 
-## Why using data tables?
+## Why using data tables
 
-Mixing step descriptions and test data quickly leads to hard to read scenarios. If the scenario itself is 
+Mixing step descriptions and test data quickly leads to hard to read scenarios. If the scenario itself is
 clear to the user, he still has to read every step to understand what exactly will be tested and with which
 data. Without proper IDE support its hard to read the test data within each step.
 
-```
+````gherkin
 Scenario: Add positive numbers
 
     Given Bernhard opened a calculator
     When he adds the numbers 1 and 2
     Then he can see the result 3
-```
+````
 
 If the number of passed test data grows for each step it will be even more complicated to read and
 to change the test data in each scenario.
@@ -66,7 +61,7 @@ The use of data tables helps to separate the step definition from the test data:
 
 Even without syntax highlighting the test data can easily be spotted within a step.
 
-```
+````gherkin
   Scenario: Add positive numbers
 
   Use a data table in a step
@@ -76,7 +71,7 @@ Even without syntax highlighting the test data can easily be spotted within a st
       | firstNumber | secondNumber |
       | 1           | 2            |
     Then he can see the result 3
-```
+````
 
 ## Use data tables in your scenarios
 
@@ -152,14 +147,14 @@ Lets start with the first data table step:
       | a              | b               |
 ```
 
-The following step definition (using ``dataTable.hashes()``): 
+The following step definition (using ``dataTable.hashes()``):
 
 ```javascript
 Given(/We can transform the table to an object using "dataTable.hashes\(\)"/, function (dataTable) {
     const objectFromTable = dataTable.hashes();
-    
+
     console.log(`
-    Printing the datatable as Object (dataTable.hashes()): 
+    Printing the datatable as Object (dataTable.hashes()):
     ${JSON.stringify(objectFromTable, null, `\t`)}
     `)
 });
@@ -181,7 +176,7 @@ will output:
     ]
 ```
 
-The elements of the first row are used as attribute names (``firstAttribure`` / ``secondAttribute``) 
+The elements of the first row are used as attribute names (``firstAttribure`` / ``secondAttribute``)
 and the remaining rows contain the attribute values.
 
 Printing the same data table in its raw format (using ``dataTable.raw()``):
@@ -191,7 +186,7 @@ Given(/We can transform the table to plain 2D Array using "dataTable.raw\(\)"/, 
     const rawDataTable = dataTable.raw();
 
     console.log(`
-    Printing the datatable as a raw 2D array (dataTable.raw()): 
+    Printing the datatable as a raw 2D array (dataTable.raw()):
     ${JSON.stringify(rawDataTable, null, `\t`)}
     `)
 });
@@ -219,9 +214,9 @@ will output:
 
 Now the first line is interpreted as a standard table row as well as the lines two and three.
 
-# Specify multiple examples within one scenario
+## Specify multiple examples within one scenario
 
-Lets assume you need two or more examples which are almost identical to describe a feature, 
+Lets assume you need two or more examples which are almost identical to describe a feature,
 like 1 + 2 = 3 and 2 + 3 = 5. As of now you could do this by duplication the scenario:
 
 ```gherkin
@@ -256,29 +251,29 @@ To facilitate this Gherkin gives you the ability to define scenario outlines:
       | 2           | 3            | 5      |
 ```
 
-Scenario Outlines are defined by using the keyword ```Scenario Outline``` at the beginning and 
+Scenario Outlines are defined by using the keyword ```Scenario Outline``` at the beginning and
 the ``Examples`` section at the end of the scenario.
 
-The elements or attributes in the examples tables first line can then be used as placeholder 
+The elements or attributes in the examples tables first line can then be used as placeholder
 throughout the scenario.
 
-When executing the scenario it will be repeated for every specific example defined in the 
+When executing the scenario it will be repeated for every specific example defined in the
 examples section.
 
 Of course the addition example is very simple. If you need a more realistic example where this
-feature might come in handy, think of a password reset action where the new password needs to 
+feature might come in handy, think of a password reset action where the new password needs to
 support some rules:
 
 e.g.
+
 1. password not containing any letters -> error
 1. password not containing any numbers -> error
 1. password not containing any special characters -> error
 
-
-# Exercise
+## Exercise
 
 1. Execute all three Scenarios separately located under the features folder
-    * Hint: execute each tag and specify the step definition folder 
+    * Hint: execute each tag and specify the step definition folder
 1. Try to explain what the remaining two data table transformations are doing:
     1. dataTable.rows()
     1. dataTable.rowsHash()
@@ -287,6 +282,6 @@ e.g.
         1. open the calculator
         2. specify the numbers to be subtracted
         3. specify the result
-    1. Use a data table for each step in which a elements of the subtraction are specified.
+    1. Use a data table for each step in which elements of the subtraction are specified.
     1. Specify THREE subtractions in the outline.
     1. Run the spec and see that all three scenario iterations are run.

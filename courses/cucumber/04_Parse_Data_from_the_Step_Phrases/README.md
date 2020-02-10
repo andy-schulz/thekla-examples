@@ -8,25 +8,19 @@ nav_order: 40
 # Parse Data from Steps
 {: .no_toc}
 
-1. TOC
-{:toc}
-
-# Parse Data from a Cucumber Step Phrase
-
 ## Example Content
 
-```text
+````text
 ├─ features
-|   ├─ 01_add_numbers.feature 
+|   ├─ 01_add_numbers.feature
 |   |         /* a simple addition scenario */
 ├─ src
 |   ├─ __step_definition__
 |   |   ├─ the_steps.js
                 /* step definition with simple cucumber expressions */
-```
+````
 
 [check the source](https://github.com/andy-schulz/thekla-examples/tree/master/courses/cucumber/04_Parse_Data_from_the_Step_Phrases)
-
 
 ## Using Simple Expressions
 
@@ -40,14 +34,12 @@ to implements the following steps:
     // Write code here that turns the phrase above into concrete actions
     return 'pending';
     });
-    
-    
+
     When('he adds the numbers {int} and {int}', function (int, int2) {
     // Write code here that turns the phrase above into concrete actions
     return 'pending';
     });
-    
-    
+
     Then('he can see the result {int}', function (int) {
     // Write code here that turns the phrase above into concrete actions
     return 'pending';
@@ -56,7 +48,7 @@ to implements the following steps:
 ````
 
 In the ``When`` step cucumber already assumed that the two numbers in the phrase
-    
+
 ````gherkin
 When he adds the numbers 1 and 2
 ````
@@ -89,7 +81,7 @@ for a detailed explanation on how to parse data from a cucumber step phrase.
 
 ## Using Regular Expressions
 
-A second approach is to map the phrase and parse data from the prase is 
+A second approach is to map the phrase and parse data from the prase is
 by using regular expressions.
 
 ````javascript
@@ -99,7 +91,7 @@ Then(/^he can see the result (.*)$/, function (result) {
 });
 ````
 
-Here the phrase is not put in quotes but in ``/.../``. I will not explain regular expressions 
+Here the phrase is not put in quotes but in ``/.../``. I will not explain regular expressions
 here, as it is a topic of its own, but with a simple regular expression as listed above
 a lot if not most of your phrases can be maped and parsed.
 
@@ -123,7 +115,7 @@ which holds a whole lot of information.
 If you want to test you regular expression first before using it in your
 step definitions go to [RegExr.com](https://regexr.com/).
 
-# Exercises
+## Exercises
 
 Use the [Cucumber Expressions](https://cucumber.io/docs/cucumber/cucumber-expressions/) page to solve the exercises.
 
@@ -131,14 +123,17 @@ Use the [Cucumber Expressions](https://cucumber.io/docs/cucumber/cucumber-expres
     * Hint: Put the name in quotes and see what cucumber suggests.
     * Print the name to the console.
 1. Make the name 'Bernhard' optional in the Given step, it should work with:
+
     ````gherkin
     Given Bernhard opened a calculator
     # or
     Given I opened a calculator
-    # or 
+    # or
     Given opened a calculator
     ````
+
 1. Create an alias 'He' for the name Bernhard, it should work with:
+
     ````gherkin
     Given Bernhard opened a calculator
     # or
@@ -146,5 +141,3 @@ Use the [Cucumber Expressions](https://cucumber.io/docs/cucumber/cucumber-expres
     # but it should not work with
     Given Heidi opened a calculator
     ````
-
-
