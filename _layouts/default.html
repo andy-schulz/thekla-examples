@@ -28,9 +28,6 @@ layout: table_wrappers
             <p class="text-small text-grey-dk-000 mb-4">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
         </footer>
     </div>
-    <div class="toc_section">
-        {% include toc.html html=content id="page_toc" %}
-    </div>
     <div class="main-content-wrap js-main-content" tabindex="0">
         <div class="main-content">
             <div class="page-header js-page-header">
@@ -100,6 +97,8 @@ layout: table_wrappers
             </div>
         </div>
     </div>
-
+    <div class="toc_section">
+        {% include toc.html html=content id="page_toc" %}
+    </div>
 </body>
 </html>
