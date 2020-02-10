@@ -60,3 +60,23 @@ blockquote {
   color: lightslategray;
   padding: 0px 10px;
 }
+
+#page_layout {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.page-content {
+  width: 75%;
+}
+
+.page_toc {
+  width: 25%;
+}
+
+.page_toc.toc {
+  position: sticky;
+  top: 2rem;
+}
+
+
