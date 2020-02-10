@@ -77,4 +77,22 @@ blockquote {
 .content_toc {
   position: sticky;
   top: 2rem;
+  counter-reset: step-counter;
+  font-size: 14px !important;
+}
+
+.content_toc ul > li::before {
+  position: absolute;
+  left: 2em;
+  content: counter(step-counter);
+  counter-increment: step-counter;
+}
+
+.content_toc ul a {
+  color: #959396;
+
+}
+
+.content_toc > ul {
+  list-style-type: none;
 }
