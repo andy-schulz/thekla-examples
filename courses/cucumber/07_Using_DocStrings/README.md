@@ -54,4 +54,6 @@ If you want to specify for example an email feature you should be able to specif
         | |
     ````
 
-1. 
+<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+
+<script type="text/javascript" src="{{ "/assets/js/dark-mode-preview.js" | absolute_url }}"></script>
