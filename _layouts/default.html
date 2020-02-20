@@ -47,6 +47,10 @@ layout: table_wrappers
                     {% endfor %}
                 </ul>
                 {% endif %}
+                <div class="toggle_dark_mode">
+                    <button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+                    <script type="text/javascript" src="{{ \"/assets/js/dark-mode-preview.js\" | absolute_url }}"></script>
+                </div>
             </div>
             <div class="page">
                 {% unless page.url == "/" %}
