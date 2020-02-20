@@ -23,7 +23,10 @@ nav_order: 70
 ## Why DocStrings
 
 In the examples before we were passing standard strings inside the step as parameter.
-If you want to specify for example an email feature you should be able to specify 
+If you want to specify larger content, for example text to be used in an email, passing 
+it in steps or data tables is not sufficient.
+
+Large texts can be used with DocString. 
 
 ````gherkin
   Scenario: Save a Single Calculation Result to File
@@ -42,6 +45,9 @@ If you want to specify for example an email feature you should be able to specif
     """
 ````
 
+DocStrings are enclosed in three quote ``"""`` character. The text in between will be passed 
+
+
 ## Exercise
 
 1. Use a DocString to print a Tree to the console:
@@ -53,7 +59,3 @@ If you want to specify for example an email feature you should be able to specif
     /___   ___\
         | |
     ````
-
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
-
-<script type="text/javascript" src="{{ "/assets/js/dark-mode-preview.js" | absolute_url }}"></script>
