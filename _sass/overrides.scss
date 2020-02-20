@@ -1,4 +1,12 @@
 /* const function*/
+.highlight code {
+  background: #302d36;
+}
+
+pre.highlight {
+  background-color: #302d36;
+}
+
 .highlight .kd {
   color: #268bd2;
   font-weight: bolder;
@@ -11,7 +19,7 @@
 
 /*punctuation and brackets*/
 .highlight .p {
-  color: #000000;
+  color: #FFFFFF;
 }
 
 /*variables, variable names*/
@@ -80,22 +88,6 @@ blockquote {
   //counter-reset: step-counter;
   font-size: 14px !important;
 }
-
-//.content_toc ul > li::before {
-//  position: absolute;
-//  left: 2em;
-//  content: counter(step-counter);
-//  counter-increment: step-counter;
-//}
-//
-//.content_toc ul a {
-//  color: #959396;
-//}
-//
-//.content_toc > ul {
-//  list-style-type: none;
-//}
-//
 
 .content_toc ul {
   list-style-type: none;
