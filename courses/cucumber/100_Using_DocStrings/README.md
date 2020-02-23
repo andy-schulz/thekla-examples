@@ -2,7 +2,7 @@
 title: Using DocStrings
 parent: Cucumber
 has_children: false
-nav_order: 70
+nav_order: 90
 ---
 
 # Using DocStrings
@@ -23,7 +23,7 @@ nav_order: 70
 ## Why DocStrings
 
 In the examples before we were passing standard strings inside the step as parameter.
-If you want to specify larger content, for example text to be used in an email, passing 
+If you want to specify larger content be used in emails or files, the possibility to  pass 
 it in steps or data tables is not sufficient.
 
 Large texts can be used with DocString. 
@@ -45,13 +45,23 @@ Large texts can be used with DocString.
     """
 ````
 
-DocStrings are enclosed in three quote ``"""`` character. The text in between will be passed 
+DocStrings are enclosed in three quote ``"""`` character. The string will then be passed
+as a normal parameter the the step definition.
 
+````typescript
+Then('he can see the file containing', function (docString) {
+    console.log(docString)
+});
+````
+
+Check out
 
 ## Exercise
 
 1. Use a DocString to print a Tree to the console:
 
+    The output should look like this:
+    
     ````text
          *
        _/ \_
@@ -59,3 +69,12 @@ DocStrings are enclosed in three quote ``"""`` character. The text in between wi
     /___   ___\
         | |
     ````
+
+2. Create a step where 
+    1. data is passed in the step
+    1. data is specified in data tables
+    1. data is passed as a DocString
+    
+    Now create a step definition, printing all there data structures to the console.
+    
+ 

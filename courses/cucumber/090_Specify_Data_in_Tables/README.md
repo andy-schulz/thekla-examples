@@ -2,7 +2,7 @@
 title: Using Data Tables
 parent: Cucumber
 has_children: false
-nav_order: 60
+nav_order: 100
 ---
 
 # Using Data Tables
