@@ -33,7 +33,7 @@ When you run
 npx cucumber-js
 ````
 
-The same error message is thrown as in the [First Feature](../01_Create_A_Feature_File/README.md) example,
+The same error message is thrown as in the [First Feature](cucumber/010_Create_A_Feature_File/README.md) example,
 as the step definitions cant be found by cucumber, it will only search in the features
 folder by default.
 

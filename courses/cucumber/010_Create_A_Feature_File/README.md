@@ -135,4 +135,4 @@ We will implement the step definitions in the next example.
     * start cucumber and check the output
     * make sure cucumber executes your new feature file
 
-[Next: Create your first step definition](../02_Create_The_Step_Definition/README.md)
+[Next: Create your first step definition](cucumber/020_Create_The_Step_Definition/README.md)

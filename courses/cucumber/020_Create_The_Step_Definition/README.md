@@ -113,4 +113,4 @@ It has the following meaning
 2. make the second step fail and observe the result in the terminal
 3. create a feature and a scenario describing the subtraction of two numbers
 
-[Next: Separate the step definition for the features](../03_Separate_the_Steps_from_the_Features/README.md)
+[Next: Separate the step definition for the features](cucumber/030_Separate_the_Steps_from_the_Features/README.md)
