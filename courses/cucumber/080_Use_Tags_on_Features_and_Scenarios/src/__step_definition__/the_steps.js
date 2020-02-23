@@ -5,8 +5,6 @@ Given(`Bernhard opened a calculator`, function () {
 });
 
 When(`he adds the numbers {int} and {int}`, function (int, int2) {
-    const myFirstParameter = int;
-    const mySecondParameter = int2;
     return `success`;
 });
 
