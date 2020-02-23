@@ -30,10 +30,9 @@ would lead to dependant Scenarios.
 |   ├─ add_numbers.feature 
 ├─ src
 |   ├─ __step_definition__
-|   |   ├─ the_world_object.js            -- the simple world object example
-|   |   ├─ the_overridden_world_object.js -- overriding the world object
+|   |   ├─ the_world_object.js   -- the simple world object example
 |   ├─ calculator
-|   |   ├─ Calculator.js                  -- a simple calculator implementention
+|   |   ├─ Calculator.js         -- a simple calculator implementention
 ````
 
 ## Sharing Data between steps
