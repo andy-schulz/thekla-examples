@@ -103,7 +103,7 @@ npx cucumber-js -r src/**/the_world_parameters.js ^
     --world-parameters "{\\""first\\"":2,\\""second\\"":4,\\""expected\\"":6}"
 ````
 
-````Powershell
+````powershell
 npx cucumber-js -r src/**/the_world_parameters.js `
     --world-parameters '{\\"""first\\""":2,\\"""second\\""":4,\\"""expected\\""":6}'
 ````
