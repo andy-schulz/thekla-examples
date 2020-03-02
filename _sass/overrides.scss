@@ -1,6 +1,7 @@
 @import "tabs";
-@import "toc";
+@import "floating_toc";
 @import "code_highlight";
+@import "main_layout";
 
 button.btn.js-toggle-dark-mode {
   font-size: xx-small;
