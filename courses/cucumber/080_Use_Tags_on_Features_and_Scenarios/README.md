@@ -3,6 +3,7 @@ title: Using Tags
 parent: Cucumber
 has_children: false
 nav_order: 80
+tabbed: true
 ---
 
 # Using Tags
@@ -80,7 +81,16 @@ A tag can be specified by passing the ``--tags`` option
 1. Execute all ``@BasicArithmetic`` scenarios
 
     ````bash
+    # works in linux shall and windows powershell and CMD
     npx cucumber-js --require src/__step_definition__/**/*.js --tags @BasicArithmetic
+   
+    # there are differences in string handling in windows powershell and cmd
+    
+    # pass a string in powershell
+    npx cucumber-js --require src/__step_definition__/**/*.js --tags '\"@BasicArithmetic\"'
+    
+    pass a string in CMD
+    npx cucumber-js --require src/__step_definition__/**/*.js --tags "\"@BasicArithmetic\""
     ````
 
    should result in the following output
@@ -119,9 +129,12 @@ A tag can be specified by passing the ``--tags`` option
 ## Exercises
 
 1. Write a feature Square Root with one scenario and tag the feature as @HigherOrderArithmetic
-    * now execute only
+    * now execute only just create feature
 1. Execute the scenario where two positive numbers are added, make sure only one scenario was executed
     * first try to guess how to write those tag expressions, its not difficult
     * If you can't think of a solution, have a look at [tag expressions](https://cucumber.io/docs/cucumber/api/#tag-expressions)
+    * Remember:
+        * passing strings to powershell ``--tags '\"PUT MY EXPRESSION HERE\"'``
+        * passing strings to cmd ``--tags "\"PUT MY EXPRESSION HERE\""``
 1. Execute tests which dont add any positive numbers.
     * try to guess the tag expression again, otherwise you can get hints in the documentation listed before.

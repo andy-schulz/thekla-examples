@@ -97,20 +97,22 @@ via the cli option ``--world-parameters``
 
 > As the different shells handle strings a bit different make sure you pass the JSON in the correct format.
 
-````bash
-# Windows CMD
+{%capture tabs %}
+````cmd
 npx cucumber-js -r src/**/the_world_parameters.js --world-parameters "{\\""first\\"":2,\\""second\\"":4,\\""expected\\"":6}"
+````
 
-# Windows Powershell
+````Powershell
 npx cucumber-js -r src/**/the_world_parameters.js --world-parameters '{\\"""first\\""":2,\\"""second\\""":4,\\"""expected\\""":6}'
 ````
+{% endcapture %}{% include tabs.html html=tabs %}
 
 Obviously passing parameters like this is nothing you would really type in manually. This is something used in an
 automation environment (like Jenkins) or from a starting script.
 
 within a step definition you can then access the parameters as follows:
 
-````typescript
+````javascript
 Then('he can see the result {int}', function (result) {
     console.log(`First parameter: ${this.parameters.first}`);
     console.log(`Second parameter: ${this.parameters.second}`);
