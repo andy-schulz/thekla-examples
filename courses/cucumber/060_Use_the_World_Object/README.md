@@ -98,7 +98,7 @@ via the cli option ``--world-parameters``
 > As the different shells handle strings a bit different make sure you pass the JSON in the correct format.
 
 {%capture tabs %}
-````cmd
+````batchfile
 npx cucumber-js -r src/**/the_world_parameters.js ^
     --world-parameters "{\\""first\\"":2,\\""second\\"":4,\\""expected\\"":6}"
 ````
