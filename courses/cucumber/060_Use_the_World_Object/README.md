@@ -107,6 +107,12 @@ npx cucumber-js -r src/**/the_world_parameters.js ^
 npx cucumber-js -r src/**/the_world_parameters.js `
     --world-parameters '{\\"""first\\""":2,\\"""second\\""":4,\\"""expected\\""":6}'
 ````
+
+````bash
+npx cucumber-js -r src/**/the_world_parameters.js \
+    --world-parameters '{"first":2,"second":4,"expected":6}'
+````
+
 {% endcapture %}{% include tabs.html html=tabs %}
 
 Obviously passing parameters like this is nothing you would really type in manually. This is something used in an
