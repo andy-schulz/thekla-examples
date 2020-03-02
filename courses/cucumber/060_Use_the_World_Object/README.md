@@ -99,11 +99,13 @@ via the cli option ``--world-parameters``
 
 {%capture tabs %}
 ````cmd
-npx cucumber-js -r src/**/the_world_parameters.js --world-parameters "{\\""first\\"":2,\\""second\\"":4,\\""expected\\"":6}"
+npx cucumber-js -r src/**/the_world_parameters.js ^
+    --world-parameters "{\\""first\\"":2,\\""second\\"":4,\\""expected\\"":6}"
 ````
 
 ````Powershell
-npx cucumber-js -r src/**/the_world_parameters.js --world-parameters '{\\"""first\\""":2,\\"""second\\""":4,\\"""expected\\""":6}'
+npx cucumber-js -r src/**/the_world_parameters.js `
+    --world-parameters '{\\"""first\\""":2,\\"""second\\""":4,\\"""expected\\""":6}'
 ````
 {% endcapture %}{% include tabs.html html=tabs %}
 
