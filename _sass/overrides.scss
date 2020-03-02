@@ -7,56 +7,18 @@ button.btn.js-toggle-dark-mode {
   font-size: xx-small;
 }
 
-#page_layout {
-  display: flex;
-  flex-direction: row-reverse;
+@media (min-width: 66.5rem) {
+  .main-content {
+    margin-left: calc((100% - 1064px) / 2 + 150px);
+  }
+  .side-bar {
+    width: calc((100% - 1064px) / 2 + 150px);
+    min-width: 264px;
+  }
 }
 
-.page-content {
-  width: 75%;
-}
-
-.page_toc {
-  width: 25%;
-}
-
-.content_toc {
-  position: sticky;
-  top: 2rem;
-  //counter-reset: step-counter;
-  font-size: 14px !important;
-}
-
-.content_toc ul {
-  list-style-type: none;
-  counter-reset: step-counter;
-
-  > li {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      top: 0.2em;
-      left: -1.6em;
-      color: $grey-dk-000;
-      content: counter(step-counter);
-      counter-increment: step-counter;
-      @include fs-3;
-
-      @include mq(sm) {
-        top: 0.11em;
-      }
-    }
-
-    ul {
-      counter-reset: sub-counter;
-
-      li {
-        &::before {
-          content: counter(sub-counter, lower-alpha);
-          counter-increment: sub-counter;
-        }
-      }
-    }
+@media (min-width: 50rem) {
+  .main-content {
+    max-width: 1000px;
   }
 }
