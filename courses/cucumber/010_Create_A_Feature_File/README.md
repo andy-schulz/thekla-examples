@@ -59,9 +59,14 @@ This is all you need to start execution your first feature
     ``SECTION: Node.js``
     {% include_relative NODEJS.md %}
     ``END SECTION``
+    
+    ``SECTION: JAVA``
+    {% include_relative JAVA.md %}
+    ``END SECTION``
 
 {% endcapture %}{% include section_tabs.html html=includes %}
 
+We will implement the step definitions in the next example.
 
 ## Exercises
 

@@ -1,8 +1,9 @@
+
 To run the feature file, open up a terminal and execute the commands:
 
 ````bash
 # go to the current example folder, if you already in there omit this command
-cd courses/cucumber/01_Create_A_Feature_File
+cd courses/cucumber/01_Create_A_Feature_File/nodejs
 
 # start cucumber
 npx cucumber-js
@@ -20,7 +21,7 @@ UUU
 
 Warnings:
 
-1) Scenario: Add positive numbers # examples\10_Cucumber_Quick_Start_Guide\01_Create_A_Feature_File\features\add_numbers.feature:5
+1) Scenario: Add positive numbers # examples\10_Cucumber_Quick_Start_Guide\01_Create_A_Feature_File\nodejs\features\add_numbers.feature:5
    ? Given Bernhard opened a calculator
        Undefined. Implement with the following snippet:
 
@@ -69,5 +70,3 @@ In addition cucumber even gives you a hint what you need to do to execute the sc
      });
 
 ````
-
-We will implement the step definitions in the next example.
