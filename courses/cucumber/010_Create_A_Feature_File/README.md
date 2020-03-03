@@ -54,6 +54,8 @@ This is all you need to start execution your first feature
 
 ## Execution
 
+To run the feature file, open up a terminal and execute the commands:
+
 {% capture includes %}
 
     ``SECTION: Node.js``

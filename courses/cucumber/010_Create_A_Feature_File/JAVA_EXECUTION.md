@@ -1,6 +1,4 @@
 
-To run the feature file, open up a terminal and execute the commands:
-
 ````bash
 # go to the current example folder, if you already in there omit this command
 cd courses/cucumber/01_Create_A_Feature_File/java
