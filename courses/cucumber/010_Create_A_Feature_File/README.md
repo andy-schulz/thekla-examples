@@ -57,11 +57,11 @@ This is all you need to start execution your first feature
 {% capture includes %}
 
     ``SECTION: Node.js``
-    {% include_relative NODEJS.md %}
+    {% include_relative NODEJS_EXECUTION.md %}
     ``END SECTION``
     
     ``SECTION: JAVA``
-    {% include_relative JAVA.md %}
+    {% include_relative JAVA_EXECUTION.md %}
     ``END SECTION``
 
 {% endcapture %}{% include section_tabs.html html=includes %}
