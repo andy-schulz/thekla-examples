@@ -11,6 +11,8 @@
   background: #FFFFFF;
   font-weight: bold;
   transition: background ease 0.2s;
+  color: #b4b4b4;
+  background: #eee
 }
 .tabs .tab {
   order: 99; // Put the tabs last
@@ -30,8 +32,10 @@
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #eee;
+  background: #fff;
+  color: #5c5962;
 }
+
 .tabs input[type="radio"]:checked + label + .tab {
   display: block;
   border: 1px solid #ccc;
