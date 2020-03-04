@@ -58,7 +58,6 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 1
 [INFO] Total time:  8.034 s
 [INFO] Finished at: 2020-03-03T12:04:06+01:00
 [INFO] ------------------------------------------------------------------------
-
 ```
 
 In the output above Cucumber gives you a hint what you need to execute the scenario:

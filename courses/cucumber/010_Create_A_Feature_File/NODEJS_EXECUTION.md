@@ -14,7 +14,6 @@ npx cucumber-js
 > See the [npx documentation](https://www.npmjs.com/package/npx) for further details.
 
 ```bash
-
 UUU
 
 Warnings:
@@ -48,7 +47,6 @@ Warnings:
 1 scenario (1 undefined)
 3 steps (3 undefined)
 0m00.000s
-
 ```
 
 At the top of the output you see the following character sequence `UUU`.
@@ -66,5 +64,4 @@ In addition cucumber even gives you a hint what you need to do to execute the sc
        // Write code here that turns the phrase above into concrete actions
        return 'pending';
      });
-
 ````
