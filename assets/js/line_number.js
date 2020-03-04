@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
         for (var j = 0; j < num-1; j++) {
             var line_num = pre[i].getElementsByTagName('span')[0];
             line_num.innerHTML += '<span>' + (j + 1) + '</span>';
-            console.log(j)
         }
     }
 })
