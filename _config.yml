@@ -8,3 +8,5 @@ aux_links:
     - "//github.com/andy-schulz/thekla-examples/"
 exclude:
   - reference/*/part_*.*
+  - courses/node_modules/
+  - examples/node_modules/
