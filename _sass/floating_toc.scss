@@ -4,11 +4,22 @@
 }
 
 .page-content {
-  width: 75%;
+  width: 100%;
 }
 
 .page_toc {
-  width: 25%;
+  display: none;
+}
+
+@media (min-width: 50rem) {
+  .page_toc {
+    display: block;
+    width: 25%;
+  }
+
+  .page-content {
+    width: 75%;
+  }
 }
 
 .content_toc {
