@@ -130,6 +130,15 @@ Then('he can see the result {int}', function (result) {
 
 ## Exercise
 
+1. Implement the example with the calculator object
+    - The Calculator is stored under ``/src/calculator/Calculator.js``
+    
+    Please Do:
+    
+    1. Create an instance of the Calculator object in the ``Given`` step
+    2. Do the calculation in the ``When`` step
+    3. Print the calculation in the ``Then`` step
+    
 1. Calculate the result from the current example and check if the result is correct. 
 Fail the step in case the result does not match the expectation.
     
@@ -146,19 +155,15 @@ Fail the step in case the result does not match the expectation.
         ````typescript
            throw Error("my Error message")
         ````
-    1. Change the values of the scenario and see what kind of results you get
+    1. Change the values of the scenario and let the test fail
 
 1. Create a new step definition file where the step definitions are not using the 
-values from the steps but using the passed parameters by using.
+values from the steps but using the passed parameters.
 
     Taking the example from above, the output should look like:
     
     ````text
-    The calculator will be opened
-    ..First parameter: 2
-    Second parameter: 4
-    Expected Result: 6
-    .
+    ...
     
     1 scenario (1 passed)
     3 steps (3 passed)

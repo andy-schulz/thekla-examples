@@ -9,19 +9,20 @@ const CalculatorWorldConstructor = function () {
 setWorldConstructor(CalculatorWorldConstructor);
 
 Given(`Bernhard opened a calculator`, function () {
-    return `success`;
 });
 
 When(`he adds the numbers {int} and {int}`, function (firstPara, secondPara) {
+
+    const result = this.add(firstPara, secondPara);
+
     this.first = firstPara;
     this.second = secondPara;
+    this.result = result;
 });
 
 Then('he can see the result {int}', function (expected) {
 
-    const result = this.add(this.first, this.second);
-
-    if(expected !== result)
+    if (expected !== this.result)
         throw new Error(`adding ${this.first} to ${this.second} did not match the expectation of ${expected} but resulted in ${result}`)
 });
 

@@ -5,7 +5,7 @@ has_children: false
 nav_order: 70
 ---
 
-# Override the default World Object with you custom World Object
+# Override the default World Object with your custom World Object
 
 Cucumber offers the possibility to create your own custom world object so that you can pass any variable or
 helper function to your scenarios.
@@ -55,23 +55,32 @@ const CalculatorWorldConstructor = function () {
 };
 ````
 
-As the world object is shared between all steps of a scenario you can access the ``add method`` now with
+As the world object is shared between all steps of a scenario you can now access the ``add()`` method with
+
+````javascript
+When(`he adds the numbers {int} and {int}`, function (firstPara, secondPara) {
+
+    const result = this.add(firstPara, secondPara);
+
+    // pass the parameter and the result to the next steps
+    this.first = firstPara;
+    this.second = secondPara;
+    this.result = result;
+});
+````
+
+the parameters ``firstParam`` and ``secondParam`` are passed to the calculators ``add()`` function. To compare the
+result to the expected value all parameters and the result will be passed through the world object to the next step.
 
 ````javascript
 Then('he can see the result {int}', function (expected) {
 
-    const result = this.add(this.first, this.second);
-
-    if(expected !== result)
+    if (expected !== this.result)
         throw new Error(`adding ${this.first} to ${this.second} did not match the expectation of ${expected} but resulted in ${result}`)
 });
 ````
 
-The parameters ``first`` and ``second`` are passed to the world object as before, but in the ``then`` step you are
-passing the parameters to the worlds add function.
-
-
-When executing the scenario with the custom world object with
+When executing the scenario with:
 
 ````bash
 npx cucumber-js -r src

@@ -4,8 +4,8 @@
   "description": "thekla test examples",
   "scripts": {
     "50": "npx --no-install thekla dist/10_Use_a_Rest_Api/thekla_conf.js",
-    "cucumber:first_feature": "npx cucumber-js ../courses/cucumber/01_Create_A_Feature_File/features/add_numbers.feature",
-    "cucumber:first_steps": "npx cucumber-js ../courses/cucumber/02_Create_The_Step_Definition/features/add_numbers.feature",
+    "cucumber:first_feature": "npx cucumber-js ../courses/cucumber/010_Create_A_Feature_File/nodejs/features/add_numbers.feature",
+    "cucumber:first_steps": "npx cucumber-js ../courses/cucumber/020_Create_The_Step_Definition/features/add_numbers.feature",
     "prepare": "./node_modules/.bin/tsc",
     "test": "npx --no-install thekla dist/thekla_conf.js",
     "example:01": "npx --no-install thekla dist/01_Quick_Start_Guide/thekla_conf.js",

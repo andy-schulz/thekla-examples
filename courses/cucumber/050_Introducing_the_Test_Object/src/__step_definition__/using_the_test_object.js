@@ -15,15 +15,6 @@ When(`he adds the numbers {string} and {string}`, function (firstPara, secondPar
     return `success`;
 });
 
-// When(`he adds the numbers {int} and {int}`, function (firstPara, secondPara) {
-//     const calculator = new Calculator();
-//     const result = calculator.add(firstPara, secondPara);
-//
-//     console.log(`Adding ${firstPara} to ${secondPara} with my calculator is giving me ${result}`);
-//
-//     return `success`;
-// });
-
 Then('he can see the result {int}', function (result) {
     return `success`;
 });

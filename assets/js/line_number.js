@@ -10,4 +10,4 @@ document.addEventListener("DOMContentLoaded", function() {
             line_num.innerHTML += '<span>' + (j + 1) + '</span>';
         }
     }
-})
+});

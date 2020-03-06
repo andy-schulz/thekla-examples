@@ -80,6 +80,39 @@ should give you the following output:
 0m00.004s
 ````
 
+## Be fast!! - Create your cucumber profile
+
+After a while it gets boring to always type your start command into the console:
+
+````bash
+npx cucumber-js -r src/__step_definition__/**/*.js
+````
+
+Cucumber provides profiles to facilitate working with parameters. The profiles are stored in a ``cucumber.js`` file.
+
+````javascript
+const profile = {
+    "start": "-r src/__step_definition__/**/*.js"
+    // you can have as many profiles as you want in this script and name it as you like:
+    //"startMe": "-r src/__step_definition__/**/*.js"
+    //"otherStuff": "-r src/__step_definition__/**/*.js"
+};
+
+module.exports = profile;
+````
+
+Its a plain javascript object with the named list of start parameters.
+
+to start ``cucumber-js`` with a profile us specify it with ``--profile`` or ``-p``
+
+````bash
+npx cucumber-js --profile start
+
+# or
+
+npx cucumber-js -p start
+````
+
 ## Exercise
 
 1. Change the parameters from numbers to string and see what happens to the output. 
