@@ -6,7 +6,7 @@ Given(`Bernhard opened a calculator`, function () {
     return `success`;
 });
 
-When(`he adds the numbers {string} and {string}`, function (firstPara, secondPara) {
+When(`he adds the numbers {int} and {int}`, function (firstPara, secondPara) {
     const calculator = new Calculator();
     const result = calculator.add(firstPara, secondPara);
 
