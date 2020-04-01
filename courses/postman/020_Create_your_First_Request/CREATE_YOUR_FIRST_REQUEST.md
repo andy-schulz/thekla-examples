@@ -8,4 +8,4 @@ excerpt: "Execute a POST request to the mathjs API."
 categories: ["postman", "REST"]
 ---
 
-![Demo Animation](../media/postman/01_Postman_LogIn_Screen.png?raw=true)
+![Demo Animation](/media/postman/01_Postman_LogIn_Screen.png?raw=true)
