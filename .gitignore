@@ -1,19 +1,2 @@
 # IDE ignores
 .idea
-
-# as this repo will never be a package i can ignore the package-lock.json
-package-lock.json
-
-# node ignores
-node_modules
-
-# typescript ignores
-dist
-
-# java ignores
-target
-
-# Jekyll Test files
-Gemfile.lock
-_site
-.jekyll-cache
