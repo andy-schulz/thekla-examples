@@ -11,7 +11,7 @@ nav_order: 11
 This folder contains multiple projects which will give you a short overview on how
 to use cucumber. All feature files in each folder can be executed by ``cucumber-js``. 
 
-## Available courses
+## Available lessons
 
 1. [Create a feature file](010_Create_A_Feature_File/README.md)
 1. [Create the step definition](020_Create_The_Step_Definition/README.md)
