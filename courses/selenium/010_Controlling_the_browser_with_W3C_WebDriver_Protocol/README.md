@@ -1,5 +1,5 @@
 ---
-title: Create a Feature File
+title: Automate with REST
 parent: Selenium
 has_children: false
 nav_order: 10
@@ -10,20 +10,29 @@ nav_order: 10
 To understand the Selenium its best to use the tool with its own API, the 
 [W3C WebDriver specification](https://w3c.github.io/webdriver/). For the following examples you don't need 
 an in depth knowledge of the specification. This sections intends to demonstrate how test automation works
-with Selenium on its basic level without the use of a programming language like JAVA, Ruby or JavaScript.
+with Selenium on its basic level without the use of a programming languages ± like JAVA, Ruby or JavaScript.
 
 ## Prerequisites
 
-Please make sure you have [Postman](https://www.postman.com/downloads/) installed and followed the instructions to 
-[install Selenium manually](../docs/WEB_SETUP.md#manual-installation-by-downloading-the-server-and-driver-files) and its Firefox and Chrome Drivers.
+Please make sure you have [Postman](https://www.postman.com/downloads/) and 
+[Selenium](../000_Install_Selenium/Install_Selenium.md#manual-installation-by-downloading-the-server-and-driver-files) 
+installed with its Firefox and Chrome Drivers.
 
-## Starting with Postman
-
-### Create a collection
-
-### Create a Request
+Throughout this lesson we are using Postman to execute REST requests. If you are not familiar with 
+Postman please follow the [installation instructions](../../postman/000_Install_Postman/Install_Postman.md)
+and get familiar with the app by 
+[creating your first request](../../postman/010_Create_your_First_Request/CREATE_YOUR_FIRST_REQUEST.md) 
+with the app.
 
 ## What is an URL
+
+As we are going to use Seleniums REST API some basic knowledge about an URL is necessary.
+
+An URL consists of the following parts:
+
+![](../res/url_parts.png)
+
+
 
 ## Start the Chrome Driver
 
