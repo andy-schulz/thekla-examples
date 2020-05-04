@@ -16,7 +16,7 @@ async function search_google() {
 
     // identify search field
     // /session/:SessionId/element request
-    const input_field = await driver.findElement(By.name('q'));
+    const input_field = await driver.findElement(By .name('q'));
 
     // enter text into the search field
     // /session/:SessionId/element/:ElementId/value request
