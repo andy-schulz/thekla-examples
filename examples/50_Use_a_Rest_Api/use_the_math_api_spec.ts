@@ -27,7 +27,7 @@ describe(`The MathJS API to add numbers shall be executed by Martha`, () => {
         // now Martha can execute the request and store the value into the result array
         const result = await Get.from(mathApiRequest).performAs(Martha);
 
-        expect(result).toEqual(`8`);
+        expect(result.body).toEqual(`8`);
 
     });
 
@@ -44,7 +44,6 @@ describe(`The MathJS API to add numbers shall be executed by Martha`, () => {
             Send
                 .the(mathApiRequest)
                 .as(Method.get())
-                .andSaveResponse(to(result))
         );
 
         expect(result[0]).toBe(`8`);

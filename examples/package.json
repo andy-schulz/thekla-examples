@@ -32,17 +32,17 @@
   "author": "Andy Schulz",
   "license": "MIT",
   "dependencies": {
-    "@thekla/config": "^2.4.0",
-    "@thekla/core": "^2.4.0",
-    "@thekla/rest-abilities": "^2.4.0",
-    "@thekla/web-and-mobile-abilities": "^2.4.0",
-    "@types/jasmine": "^3.5.0",
+    "@thekla/config": "^2.8.3",
+    "@thekla/core": "^2.10.0",
+    "@thekla/rest-abilities": "^2.10.0",
+    "@thekla/web-and-mobile-abilities": "^2.11.0",
+    "@types/jasmine": "^3.5.12",
     "cucumber": "^5.1.0",
-    "del-cli": "^3.0.0",
-    "jasmine": "^3.5.0",
-    "log4js": "^5.3.0",
-    "thekla": "^2.4.0",
-    "ts-node": "^8.5.4",
-    "typescript": "^3.7.2"
+    "del-cli": "^3.0.1",
+    "jasmine": "^3.6.1",
+    "log4js": "^6.3.0",
+    "thekla": "^2.11.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   }
 }
