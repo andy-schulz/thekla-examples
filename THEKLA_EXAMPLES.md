@@ -1,7 +1,7 @@
 ---
 title: --- Code Examples ---
 has_children: true
-nav_order: 20
+nav_order: 100
 ---
 
 # Available Code Examples

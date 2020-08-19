@@ -3,7 +3,6 @@
   "private": true,
   "description": "thekla test examples",
   "scripts": {
-    "prepare": "tsc",
     "cucumber:01": "npx cucumber-js cucumber/01_Create_A_Feature_File/features/**/*.feature",
     "cucumber:02": "npx cucumber-js cucumber/02_Create_The_Step_Definition/features/**/*.feature",
     "cucumber:03": "npx cucumber-js cucumber/03_Separate_the_Steps_from_the_Features/features/**/*.feature",
@@ -28,6 +27,7 @@
     "@types/cucumber": "^4.0.7",
     "cucumber": "^5.1.0",
     "del-cli": "^3.0.0",
-    "log4js": "^5.3.0"
+    "log4js": "^5.3.0",
+    "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }

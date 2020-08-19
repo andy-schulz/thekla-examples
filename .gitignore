@@ -9,3 +9,11 @@ node_modules
 
 # typescript ignores
 dist
+
+# java ignores
+target
+
+# Jekyll Test files
+Gemfile.lock
+_site
+.jekyll-cache
